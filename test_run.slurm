@@ -11,5 +11,6 @@
 #SBATCH --mem=50000
 #SBATCH --cpus-per-task=4 # CPU cores per process
 #SBATCH --gpus=1
+#SBATCH --constraint=geforce_rtx_2080|geforce_rtx_3090|a5000|a6000|tesla_v100|quadro_rtx_8000|l40s|h100
 
 python -u train_crossEntropyLoss.py
