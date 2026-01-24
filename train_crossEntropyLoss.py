@@ -20,14 +20,14 @@ elif config.US8K:
 
 
 use_cuda = torch.cuda.is_available()
-device = torch.device("cuda" if use_cuda else "cpu")
-
+device = torch.device("cuda:0" if use_cuda else "cpu")
+print(f"device: {device}")
 
 model =torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
 
 
-model = nn.DataParallel(model, device_ids=[0,1])
+#model = nn.DataParallel(model, device_ids=[0,1])
 model = model.to(device)
 
 
@@ -161,7 +161,7 @@ def train_crossEntropy():
 			print("Epoch: {}/{}...".format(epoch+1, num_epochs), "Loss: {:.4f}...".format(np.mean(train_loss)),
 				"Val Loss: {:.4f}".format(np.mean(val_loss)), file=output_file)
 			print('train_acc is {:.4f} and val_acc is {:.4f}'.format(train_acc, val_acc), file=output_file)
-			mainModel_stopping(-val_acc, main_model, epoch+1)
+			mainModel_stopping(-val_acc, model, epoch+1)
 			classifier_stopping(-val_acc, classifier, epoch+1)
 			if mainModel_stopping.early_stop:
 				print("Early stopping", file=output_file)

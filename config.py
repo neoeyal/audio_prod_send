@@ -41,7 +41,7 @@ freq_masks_width = 32
 time_masks_width = 32
 
 epochs = 800
-batch_size = 128
+batch_size = 64
 warm_epochs = 10
 gamma = 0.98
 

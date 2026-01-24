@@ -91,7 +91,7 @@ class MyDataset(data.Dataset):
         wave_copy = self.wave_transforms(wave_copy)
         wave_copy.squeeze_(0)
         
-        s = librosa.feature.melspectrogram(wave_copy.numpy(), sr=44100, n_mels=128, n_fft=1024, hop_length=512) 
+        s = librosa.feature.melspectrogram(y=wave_copy.numpy(), sr=44100, n_mels=128, n_fft=1024, hop_length=512) 
         log_s = librosa.power_to_db(s, ref=np.max)
         
 	# masking the spectrograms

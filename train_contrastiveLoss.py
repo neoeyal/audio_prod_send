@@ -26,15 +26,15 @@ elif config.US8K:
 
 # CUDA for PyTorch
 use_cuda = torch.cuda.is_available()
-device = torch.device("cuda" if use_cuda else "cpu")
-
+device = torch.device("cuda:0" if use_cuda else "cpu")
+print(f"device: {device}")
 
 
 model =torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
 
 
-model = nn.DataParallel(model, device_ids=[0,1]) #
+#model = nn.DataParallel(model, device_ids=[0,1]) #
 model = model.to(device)
 
 projection_head = model_projection.ProjectionModel().to(device)
