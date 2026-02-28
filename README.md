@@ -43,3 +43,9 @@ By modifying config.py file, you can change:
  <li> the alpha value for the hybrid loss </li>
  <li> maximul-length and number of the masking segments</li>
  </ul>
+
+
+### Tracking running jobs (imry)
+
+- [text](results/2026-02-28-13-05), contrastiveLoss representation model, fold=1
+- [text](results/2026-02-28-14-19), hybridLoss, fold=1

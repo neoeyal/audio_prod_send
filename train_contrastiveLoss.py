@@ -30,7 +30,7 @@ device = torch.device("cuda:0" if use_cuda else "cpu")
 print(f"device: {device}")
 
 
-model =torchvision.models.resnet50(pretrained=True).to(device)
+model = torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
 
 
@@ -154,8 +154,6 @@ def train_contrastive():
 			if mainModel_stopping.early_stop:
 				print("Early stopping", file=output_file)
 				return
-
-
 
 
 

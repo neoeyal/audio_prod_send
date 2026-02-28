@@ -7,7 +7,11 @@ path_to_ESC50 = './data/ESC50'
 path_to_ESC10 = './data/ESC10'
 path_to_US8K = './data/US8K'
 
-path_to_classifierModel = './data/results/2020-12-22-10-42/'
+
+# Imry: there was a discrepency in the naming of the pretrained representation model path.
+# path_to_classifierModel = './data/results/2020-12-22-10-42/'
+
+supCon_path_for_classifier = './results/2026-02-28-13-05'
 
 
 ESC10_classIds = [0, 1, 10, 11, 12, 20, 21, 38, 40, 41]

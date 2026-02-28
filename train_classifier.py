@@ -11,10 +11,9 @@ from torch.optim import lr_scheduler
 
 from models import model_classifier
 from models import model_projection
-from utils.utils import EarlyStopping
+from utils.utils import EarlyStopping, WarmUpExponentialLR
 import config
 
-from utils import EarlyStopping, WarmUpExponentialLR
 if config.ESC_10:
         import dataset_ESC10 as dataset
 elif config.ESC_50:
@@ -30,18 +29,24 @@ device = torch.device("cuda" if use_cuda else "cpu")
 
 main_path = config.supCon_path_for_classifier
 
-state_dict = torch.load( main_path + 'checkpoint.pt' )
+state_dict = torch.load( main_path + '/checkpoint.pt' )
 
 pretrained_model =torchvision.models.resnet50(pretrained=True).to(device)
 pretrained_model.fc = nn.Sequential(nn.Identity())
 
-
-#to use multiple GPU cores for the model
-pretrained_model = nn.DataParallel(pretrained_model, device_ids=[0, 1])
-pretrained_model = pretrained_model.to(device)
+# Load the state_dict into the base model first
 pretrained_model.load_state_dict(state_dict)
 
+# Then wrap it in DataParallel to use multiple GPU cores
+pretrained_model = nn.DataParallel(pretrained_model, device_ids=[0, 1])
+pretrained_model = pretrained_model.to(device)
+
 pretrained_model = pretrained_model.eval()
+
+# Imry: disable gradient tracking for the frozen encoder (save GPU time)
+for param in pretrained_model.parameters():
+    param.requires_grad = False
+
 
 classifier = model_classifier.Classifier().to(device)
 
@@ -129,7 +134,7 @@ def train_classifier():
 				loss = cross_entropy_one_hot(out, label_vec) 
 				loss.backward()
 				train_loss.append(loss.item() )
-            
+        
 				optimizer.step()
             
 				train_corrects += (torch.argmax(out, dim=1) == torch.argmax(label_vec, dim=1)).sum().item()
