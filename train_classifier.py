@@ -100,7 +100,7 @@ def train_classifier():
 			print('ESC_10', file=output_file)
 			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 		elif config.ESC_50:
-			print('ESC_10', file=output_file)
+			print('ESC_50', file=output_file)
 			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 		elif config.US8K:
 			print('US8K', file=output_file)
