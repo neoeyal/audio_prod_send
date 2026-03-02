@@ -56,7 +56,7 @@ scheduler = WarmUpExponentialLR(optimizer, cold_epochs= 0, warm_epochs= config.w
 
 # creating a folder to save the reports and models
 root = './results/'
-main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')) + str('contrastiveLoss-') + str('fold ') + str(config.test_fold)
+main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')) + str('contrastiveLoss-') + str('fold-') + str(config.test_fold[0])
 if not os.path.exists(main_path):
 	os.mkdir(main_path)
 
