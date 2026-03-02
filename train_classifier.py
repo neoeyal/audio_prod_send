@@ -2,25 +2,23 @@ import torch
 import torch.nn as nn
 import numpy as np
 import os
-import shutil
 import datetime
-import sys
 import torch.nn.functional as F
 import torchvision
-from torch.optim import lr_scheduler
+from tqdm import tqdm
 
 from models import model_classifier
 from models import model_projection
-from utils.utils import EarlyStopping
+from utils.utils import EarlyStopping, WarmUpExponentialLR
 import config
 
-from utils import EarlyStopping, WarmUpExponentialLR
+# from utils import EarlyStopping, WarmUpExponentialLR
 if config.ESC_10:
-        import dataset_ESC10 as dataset
+	import dataset_ESC10 as dataset
 elif config.ESC_50:
-        import dataset_ESC50 as dataset
+	import dataset_ESC50 as dataset
 elif config.US8K:
-        import dataset_US8K as dataset
+	import dataset_US8K as dataset
 
 
 use_cuda = torch.cuda.is_available()
@@ -28,7 +26,13 @@ device = torch.device("cuda" if use_cuda else "cpu")
 
 
 
-main_path = config.supCon_path_for_classifier
+# main_path = config.supCon_path_for_classifier
+# main_path = config.path_to_classifierModel
+
+root = './results/'
+main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M'))
+if not os.path.exists(main_path):
+	os.mkdir(main_path)
 
 state_dict = torch.load( main_path + 'checkpoint.pt' )
 
@@ -37,7 +41,7 @@ pretrained_model.fc = nn.Sequential(nn.Identity())
 
 
 #to use multiple GPU cores for the model
-pretrained_model = nn.DataParallel(pretrained_model, device_ids=[0, 1])
+pretrained_model = nn.DataParallel(pretrained_model, device_ids=list(range(torch.cuda.device_count())))
 pretrained_model = pretrained_model.to(device)
 pretrained_model.load_state_dict(state_dict)
 
@@ -56,7 +60,7 @@ optimizer = torch.optim.AdamW(list(classifier.parameters()), lr=config.lr,  weig
 scheduler = WarmUpExponentialLR(optimizer, cold_epochs= 0, warm_epochs= config.warm_epochs, gamma=0.995) 
 
 # to save the parameters for the classifier
-classifier_path = main_path + 'classifier/'
+classifier_path = main_path + '-classifier/'
 if not os.path.exists(classifier_path):
 	os.mkdir(classifier_path)
 
@@ -99,7 +103,7 @@ def train_classifier():
 			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 		elif config.US8K:
 			print('US8K', file=output_file)
-			print('train folds are {} and test fold is {}'.format(config.us8k_train_folds, config.us8k_test_fold), file=output_file)
+			print('train folds are {} and test fold is {}'.format(config.train_folds, config.train_folds), file=output_file)
 
 		
 		print('number of freq masks are {} and their max length is {}'.format(config.freq_masks, config.freq_masks_width), file=output_file)
@@ -114,7 +118,7 @@ def train_classifier():
 			train_corrects = 0
 			train_samples_count = 0
         
-			for _, x, label in train_loader:
+			for _, x, label in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Train"):
 				loss = 0
 				optimizer.zero_grad()
             
@@ -143,9 +147,9 @@ def train_classifier():
         
 			classifier.eval()
         
-        
+
 			with torch.no_grad():
-				for _, val_x, val_label in val_loader:
+				for _, val_x, val_label in tqdm(val_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Val"):
 					val_x = val_x.float().to(device)
 					label = val_label.to(device).unsqueeze(1)
 					label_vec = hotEncoder(label)

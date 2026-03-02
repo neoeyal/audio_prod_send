@@ -7,6 +7,7 @@ import os
 import shutil
 import datetime
 import sys
+from tqdm import tqdm
 
 from models import model_classifier
 from models import model_projection
@@ -114,7 +115,7 @@ def train_hybrid():
 			train_loss2 = []
 			train_corrects = 0
 			train_samples_count = 0
-			for _, x, label in train_loader:
+			for _, x, label in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Train"):
 				loss = 0
 				optimizer.zero_grad()
 				
@@ -159,9 +160,9 @@ def train_hybrid():
 			model.eval()
 			projection_layer.eval()
 			classifier.eval()
-                
+
 			with torch.no_grad():
-				for _, val_x, val_label in val_loader:
+				for _, val_x, val_label in tqdm(val_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Val"):
 					val_x = val_x.float().to(device)
 					label = val_label.to(device).unsqueeze(1)
 					label_vec = hotEncoder(label)

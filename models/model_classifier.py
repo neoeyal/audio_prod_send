@@ -16,7 +16,6 @@ class Classifier(nn.Module):
         
     def forward(self, x):
         x = self.fc(x)
-        
         return x
     
     

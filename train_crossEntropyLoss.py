@@ -6,6 +6,7 @@ import numpy as np
 import os
 import datetime
 import sys
+from tqdm import tqdm
 
 from models import model_classifier
 from utils.utils import EarlyStopping, WarmUpExponentialLR
@@ -106,7 +107,7 @@ def train_crossEntropy():
 			train_corrects = 0
 			train_samples_count = 0
         
-			for _, x, label in train_loader:
+			for _, x, label in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Train"):
 				loss = 0
 				optimizer.zero_grad()
             
@@ -134,9 +135,9 @@ def train_crossEntropy():
         
 			model.eval()
 			classifier.eval()
-        
+
 			with torch.no_grad():
-				for _, val_x, val_label in val_loader:
+				for _, val_x, val_label in tqdm(val_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Val"):
 					inp = val_x.float().to(device)
 					label = val_label.to(device)
 					label_vec = hotEncoder(label)

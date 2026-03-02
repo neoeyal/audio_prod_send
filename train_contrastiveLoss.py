@@ -7,6 +7,7 @@ import datetime
 import sys
 import torch.nn.functional as F
 import torchvision
+from tqdm import tqdm
 
 from models import model_classifier
 from models import model_projection
@@ -16,11 +17,11 @@ import config
 from loss_fn import contrastive_loss
 
 if config.ESC_10:
-        import dataset_ESC10 as dataset
+	import dataset_ESC10 as dataset
 elif config.ESC_50:
-        import dataset_ESC50 as dataset
+	import dataset_ESC50 as dataset
 elif config.US8K:
-        import dataset_US8K as dataset
+	import dataset_US8K as dataset
 
 
 
@@ -34,7 +35,7 @@ model =torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
 
 
-#model = nn.DataParallel(model, device_ids=[0,1]) #
+model = nn.DataParallel(model, device_ids=list(range(torch.cuda.device_count())))
 model = model.to(device)
 
 projection_head = model_projection.ProjectionModel().to(device)
@@ -55,7 +56,7 @@ scheduler = WarmUpExponentialLR(optimizer, cold_epochs= 0, warm_epochs= config.w
 
 # creating a folder to save the reports and models
 root = './results/'
-main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M'))
+main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')) + str('contrastiveLoss-') + str('fold ') + str(config.test_fold)
 if not os.path.exists(main_path):
 	os.mkdir(main_path)
 
@@ -70,7 +71,7 @@ def hotEncoder(v):
 
 
 def train_contrastive():
-	num_epochs = 800
+	num_epochs = 1
 	with open(main_path + '/results.txt','w', 1) as output_file:
 		mainModel_stopping = EarlyStopping(patience=300, verbose=True, log_path=main_path, output_file=output_file)
 
@@ -97,7 +98,7 @@ def train_contrastive():
         
 			train_loss = []
            
-			for _, x, label in train_loader:
+			for _, x, label in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Train"):
 				batch_loss = 0
 				optimizer.zero_grad()
             
@@ -123,9 +124,9 @@ def train_contrastive():
 			val_loss = []
 			model.eval()
 			projection_head.eval()
-        
+
 			with torch.no_grad():
-				for _, val_x, val_label in val_loader:
+				for _, val_x, val_label in tqdm(val_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Val"):
 					val_x = val_x.to(device)
 					label = val_label.to(device).unsqueeze(1)
 					label_vec = hotEncoder(label)

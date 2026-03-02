@@ -1,9 +1,10 @@
 # requirements file
 
 ### BEGIN ###
-python>=3.7
-pytorch>=1.4.0
-torchvision>=0.8.1
-Numpy>=1.19.2
-librosa>=0.8.0
+# python>=3.7
+torch>=2.0.0
+torchvision>=0.16.0
+Numpy>=1.26.0
+librosa>=0.10.0
+tqdm>=4.50.0
 ### END ###
