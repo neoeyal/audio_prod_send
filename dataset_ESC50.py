@@ -25,7 +25,8 @@ device = torch.device("cuda" if use_cuda else "cpu")
 class MyDataset(data.Dataset):
     
     def __init__(self, train=True):
-        self.root = './data/ESC50/ESC-50-master/audio/'
+        #self.root = './data/ESC50/ESC-50-master/audio/'
+        self.root = './data/ESC50-mini/audio/'
         self.train = train
         
         #getting name of all files inside the all of the train_folds
