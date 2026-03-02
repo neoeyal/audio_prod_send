@@ -1,8 +1,8 @@
 #! /bin/sh
 
-#SBATCH --job-name=test_run
-#SBATCH --output=./logs/test_run.out
-#SBATCH --error=./errors/test_run.out
+#SBATCH --job-name=test_run4
+#SBATCH --output=./logs/test_run4.out
+#SBATCH --error=./errors/test_run4.out
 #SBATCH --partition=studentkillable
 #SBATCH --time=1400 # max time (minutes)
 #SBATCH --signal=USR1@120

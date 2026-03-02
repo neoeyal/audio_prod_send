@@ -1,8 +1,0 @@
-*****
-BASELINE
-transfer - augmentation on both waves and specs - 3 channels
-ESC_50
-train folds are [2, 3, 4, 5] and test fold is [1]
-number of freq masks are 2 and their max length is 32
-number of time masks are 1 and their max length is 32
-*****
