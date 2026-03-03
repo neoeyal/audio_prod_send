@@ -76,7 +76,7 @@ def hotEncoder(v):
 
 
 def train_contrastive():
-	num_epochs = 1
+	num_epochs = 800
 	with open(main_path + '/results.txt','w', 1) as output_file:
 		mainModel_stopping = EarlyStopping(patience=300, verbose=True, log_path=main_path, output_file=output_file)
 

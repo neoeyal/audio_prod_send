@@ -93,7 +93,7 @@ def cross_entropy_one_hot(input, target):
 
 
 def train_classifier():
-	num_epochs = 1
+	num_epochs = 800
 
 	with open(classifier_data_path + '/classifier_results.txt','w', 1) as output_file:
 		classifier_stopping = EarlyStopping(patience=300, verbose=True, log_path=classifier_data_path, output_file=output_file)
