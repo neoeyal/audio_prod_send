@@ -6,7 +6,7 @@ import datetime
 import torch.nn.functional as F
 import torchvision
 from tqdm import tqdm
-
+import sys
 from models import model_classifier
 from models import model_projection
 from utils.utils import EarlyStopping, WarmUpExponentialLR
@@ -20,6 +20,9 @@ elif config.ESC_50:
 elif config.US8K:
 	import dataset_US8K as dataset
 
+test_fold = int(sys.argv[1])
+config.test_fold = [test_fold]
+train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
 
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
@@ -30,11 +33,14 @@ device = torch.device("cuda" if use_cuda else "cpu")
 # main_path = config.path_to_classifierModel
 
 root = './results/'
-main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M'))
-if not os.path.exists(main_path):
-	os.mkdir(main_path)
+checkpoint_path = root + f'contrastive/contrastiveLoss-fold-{config.test_fold[0]}/' + 'checkpoint.pt'
+classifier_data_path = root + f'classifier/classifier-fold-{config.test_fold[0]}/'
 
-state_dict = torch.load( main_path + 'checkpoint.pt' )
+# main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M'))
+if not os.path.exists(classifier_data_path):
+	os.mkdir(classifier_data_path)
+
+state_dict = torch.load(checkpoint_path)
 
 pretrained_model =torchvision.models.resnet50(pretrained=True).to(device)
 pretrained_model.fc = nn.Sequential(nn.Identity())
@@ -60,9 +66,9 @@ optimizer = torch.optim.AdamW(list(classifier.parameters()), lr=config.lr,  weig
 scheduler = WarmUpExponentialLR(optimizer, cold_epochs= 0, warm_epochs= config.warm_epochs, gamma=0.995) 
 
 # to save the parameters for the classifier
-classifier_path = main_path + '-classifier/'
-if not os.path.exists(classifier_path):
-	os.mkdir(classifier_path)
+# classifier_path = main_path + '-classifier/'
+if not os.path.exists(classifier_data_path):
+	os.mkdir(classifier_data_path)
 
 
 
@@ -89,8 +95,8 @@ def cross_entropy_one_hot(input, target):
 def train_classifier():
 	num_epochs = 800
 
-	with open(main_path + '/classifier_results.txt','w', 1) as output_file:
-		classifier_stopping = EarlyStopping(patience=300, verbose=True, log_path=classifier_path, output_file=output_file)
+	with open(classifier_data_path + '/classifier_results.txt','w', 1) as output_file:
+		classifier_stopping = EarlyStopping(patience=300, verbose=True, log_path=classifier_data_path, output_file=output_file)
 
 		print('*****', file=output_file)
 		print('classifier after sup_contrastive', file=output_file)
