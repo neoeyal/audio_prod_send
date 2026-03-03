@@ -26,7 +26,6 @@ if ESC_10 or ESC_50:
 	train_folds = list(i for i in range(1, 6) if i != test_fold[0])	
 else:
 	lr = 1e-4 # for US8K
-	fold = 10
 	test_fold = [2]
 	train_folds = list(i for i in range(1, 11) if i != test_fold[0])	
 	

@@ -24,6 +24,9 @@ elif config.US8K:
 	import dataset_US8K as dataset
 
 
+test_fold = int(sys.argv[1])
+config.test_fold = [test_fold]
+train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
 
 # CUDA for PyTorch
 use_cuda = torch.cuda.is_available()
@@ -55,8 +58,10 @@ scheduler = WarmUpExponentialLR(optimizer, cold_epochs= 0, warm_epochs= config.w
 
 
 # creating a folder to save the reports and models
-root = './results/'
-main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')) + str('contrastiveLoss-') + str('fold-') + str(config.test_fold[0])
+root = './results/contrastive/'
+main_path = (root +
+			 # str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')) +
+			 str('contrastiveLoss-') + str('fold-') + str(config.test_fold[0]))
 if not os.path.exists(main_path):
 	os.mkdir(main_path)
 
