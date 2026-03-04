@@ -23,6 +23,9 @@ elif config.US8K:
 	import dataset_US8K as dataset
 
 
+test_fold = int(sys.argv[1])
+config.test_fold = [test_fold]
+train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
 
 
 use_cuda = torch.cuda.is_available()
@@ -33,7 +36,7 @@ device = torch.device("cuda" if use_cuda else "cpu")
 model =torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
 
-model = nn.DataParallel(model, device_ids=[0, 1]) 
+model = nn.DataParallel(model, device_ids=list(range(torch.cuda.device_count())))
 model = model.to(device)
 
 
@@ -57,14 +60,15 @@ scheduler = WarmUpExponentialLR(optimizer, cold_epochs= 0, warm_epochs= config.w
 
 # creating a folder to save the reports and models
 root = './results/'
-main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M'))
+main_path = root + f'hybrid/hybridLoss-fold-{config.test_fold[0]}/'
 if not os.path.exists(main_path):
 	os.mkdir(main_path)
 
+resnet_path = main_path + '/' + 'resnet'
+
 classifier_path = main_path + '/' + 'classifier'
-os.mkdir(classifier_path)
 
-
+projection_path = main_path + '/' + 'projection'
 
 
 def hotEncoder(v):
@@ -82,8 +86,9 @@ def train_hybrid():
 	num_epochs = 800
     
 	with open(main_path + '/results.txt','w', 1) as output_file:
-		mainModel_stopping = EarlyStopping(patience=300, verbose=True, log_path=main_path, output_file=output_file)
+		mainModel_stopping = EarlyStopping(patience=300, verbose=True, log_path=resnet_path, output_file=output_file)
 		classifier_stopping = EarlyStopping(patience=300, verbose=False, log_path=classifier_path, output_file=output_file)
+		proj_stopping = EarlyStopping(patience=300, verbose=False, log_path=projection_path, output_file=output_file)
 
 		print('*****', file=output_file)
 		print('HYBRID', file=output_file)
@@ -199,7 +204,7 @@ def train_hybrid():
         
 			# add validation checkpoint for early stopping here
 			mainModel_stopping(-val_acc, model, epoch+1)
-			#proj_stopping(-val_acc, projection_layer, epoch+1)
+			proj_stopping(-val_acc, projection_layer, epoch+1)
 			classifier_stopping(-val_acc, classifier, epoch+1)
 			if mainModel_stopping.early_stop:
 				print("Early stopping", file=output_file)
@@ -208,5 +213,6 @@ def train_hybrid():
 
 if __name__ == "__main__":
 	train_hybrid()
+
 
 
