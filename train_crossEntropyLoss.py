@@ -19,6 +19,9 @@ elif config.ESC_50:
 elif config.US8K:
 	import dataset_US8K as dataset
 
+test_fold = int(sys.argv[1])
+config.test_fold = [test_fold]
+config.train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
 
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
@@ -28,7 +31,6 @@ model =torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
 
 
-#model = nn.DataParallel(model, device_ids=[0,1])
 model = model.to(device)
 
 
@@ -41,12 +43,13 @@ train_loader, val_loader = dataset.create_generators()
 
 
 root = './results/'
-main_path = root + str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M'))
+main_path = root + 'crossEntropy/crossEntropyLoss-fold-{}/'.format(config.test_fold[0])
 if not os.path.exists(main_path):
 	os.mkdir(main_path)
 
 classifier_path = main_path + '/' + 'classifier'
-os.mkdir(classifier_path)
+if not os.path.exists(classifier_path):
+	os.mkdir(classifier_path)
 
 
 
@@ -90,7 +93,7 @@ def train_crossEntropy():
 			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 		elif config.US8K:
 			print('US8K', file=output_file)
-			print('train folds are {} and test fold is {}'.format(config.us8k_train_folds, config.us8k_test_fold), file=output_file)
+			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 
 
 		print('number of freq masks are {} and their max length is {}'.format(config.freq_masks, config.freq_masks_width), file=output_file)
