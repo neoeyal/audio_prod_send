@@ -65,10 +65,16 @@ if not os.path.exists(main_path):
 	os.mkdir(main_path)
 
 resnet_path = main_path + '/' + 'resnet'
+if not os.path.exists(resnet_path):
+	os.mkdir(resnet_path)
 
 classifier_path = main_path + '/' + 'classifier'
+if not os.path.exists(classifier_path):
+	os.mkdir(classifier_path)
 
 projection_path = main_path + '/' + 'projection'
+if not os.path.exists(projection_path):
+	os.mkdir(projection_path)
 
 
 def hotEncoder(v):
