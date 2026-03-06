@@ -26,7 +26,7 @@ elif config.US8K:
 
 test_fold = int(sys.argv[1])
 config.test_fold = [test_fold]
-train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
+config.train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
 
 # CUDA for PyTorch
 use_cuda = torch.cuda.is_available()

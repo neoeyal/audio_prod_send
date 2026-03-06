@@ -22,7 +22,9 @@ elif config.US8K:
 
 test_fold = int(sys.argv[1])
 config.test_fold = [test_fold]
-train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
+config.train_folds = list(i for i in range(1, 11) if i != config.test_fold[0])
+
+print ('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold))
 
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
@@ -109,7 +111,7 @@ def train_classifier():
 			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 		elif config.US8K:
 			print('US8K', file=output_file)
-			print('train folds are {} and test fold is {}'.format(config.train_folds, config.train_folds), file=output_file)
+			print('train folds are {} and test fold is {}'.format(config.train_folds, config.test_fold), file=output_file)
 
 		
 		print('number of freq masks are {} and their max length is {}'.format(config.freq_masks, config.freq_masks_width), file=output_file)
