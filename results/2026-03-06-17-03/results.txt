@@ -1,0 +1,1132 @@
+*****
+Supervised Contrastive Loss
+temperature for the contrastive loss is 0.05
+ESC_50
+train folds are [1, 2, 3, 5] and test fold is [4]
+number of freq masks are 2 and their max length is 32
+number of time masks are 1 and their max length is 32
+*****
+Epoch: 1/800... Loss: 2.6531... Val Loss: 1.8555
+Validation loss decreased (inf --> 1.855544).  Saving model ...
+Epoch: 2/800... Loss: 2.2868... Val Loss: 1.8088
+Validation loss decreased (1.855544 --> 1.808786).  Saving model ...
+Epoch: 3/800... Loss: 2.0479... Val Loss: 1.3369
+Validation loss decreased (1.808786 --> 1.336922).  Saving model ...
+Epoch: 4/800... Loss: 1.9175... Val Loss: 1.4034
+EarlyStopping counter: 1 out of 300
+Epoch: 5/800... Loss: 1.6821... Val Loss: 1.3708
+EarlyStopping counter: 2 out of 300
+Epoch: 6/800... Loss: 1.7201... Val Loss: 1.2932
+Validation loss decreased (1.336922 --> 1.293163).  Saving model ...
+Epoch: 7/800... Loss: 1.6564... Val Loss: 1.2634
+Validation loss decreased (1.293163 --> 1.263389).  Saving model ...
+Epoch: 8/800... Loss: 1.6583... Val Loss: 1.2717
+EarlyStopping counter: 1 out of 300
+Epoch: 9/800... Loss: 1.5744... Val Loss: 1.7573
+EarlyStopping counter: 2 out of 300
+Epoch: 10/800... Loss: 1.6104... Val Loss: 1.4450
+EarlyStopping counter: 3 out of 300
+Epoch: 11/800... Loss: 1.3607... Val Loss: 1.5298
+EarlyStopping counter: 4 out of 300
+Epoch: 12/800... Loss: 1.5302... Val Loss: 1.3702
+EarlyStopping counter: 5 out of 300
+Epoch: 13/800... Loss: 1.3135... Val Loss: 1.4344
+EarlyStopping counter: 6 out of 300
+Epoch: 14/800... Loss: 1.2527... Val Loss: 1.2092
+Validation loss decreased (1.263389 --> 1.209247).  Saving model ...
+Epoch: 15/800... Loss: 1.2666... Val Loss: 1.0774
+Validation loss decreased (1.209247 --> 1.077433).  Saving model ...
+Epoch: 16/800... Loss: 1.1710... Val Loss: 0.9905
+Validation loss decreased (1.077433 --> 0.990548).  Saving model ...
+Epoch: 17/800... Loss: 1.1497... Val Loss: 0.9881
+Validation loss decreased (0.990548 --> 0.988056).  Saving model ...
+Epoch: 18/800... Loss: 1.0625... Val Loss: 1.0720
+EarlyStopping counter: 1 out of 300
+Epoch: 19/800... Loss: 0.9817... Val Loss: 1.2944
+EarlyStopping counter: 2 out of 300
+Epoch: 20/800... Loss: 0.9537... Val Loss: 0.8964
+Validation loss decreased (0.988056 --> 0.896438).  Saving model ...
+Epoch: 21/800... Loss: 0.9849... Val Loss: 0.9790
+EarlyStopping counter: 1 out of 300
+Epoch: 22/800... Loss: 0.9178... Val Loss: 1.0274
+EarlyStopping counter: 2 out of 300
+Epoch: 23/800... Loss: 0.9022... Val Loss: 0.7508
+Validation loss decreased (0.896438 --> 0.750822).  Saving model ...
+Epoch: 24/800... Loss: 0.8281... Val Loss: 0.8786
+EarlyStopping counter: 1 out of 300
+Epoch: 25/800... Loss: 0.8570... Val Loss: 1.0205
+EarlyStopping counter: 2 out of 300
+Epoch: 26/800... Loss: 0.8117... Val Loss: 0.8687
+EarlyStopping counter: 3 out of 300
+Epoch: 27/800... Loss: 0.8160... Val Loss: 0.9848
+EarlyStopping counter: 4 out of 300
+Epoch: 28/800... Loss: 0.6915... Val Loss: 0.7794
+EarlyStopping counter: 5 out of 300
+Epoch: 29/800... Loss: 0.6865... Val Loss: 0.8386
+EarlyStopping counter: 6 out of 300
+Epoch: 30/800... Loss: 0.6980... Val Loss: 0.9618
+EarlyStopping counter: 7 out of 300
+Epoch: 31/800... Loss: 0.7285... Val Loss: 0.7199
+Validation loss decreased (0.750822 --> 0.719933).  Saving model ...
+Epoch: 32/800... Loss: 0.6641... Val Loss: 0.7707
+EarlyStopping counter: 1 out of 300
+Epoch: 33/800... Loss: 0.6973... Val Loss: 0.6905
+Validation loss decreased (0.719933 --> 0.690532).  Saving model ...
+Epoch: 34/800... Loss: 0.6742... Val Loss: 0.9369
+EarlyStopping counter: 1 out of 300
+Epoch: 35/800... Loss: 0.7151... Val Loss: 0.9109
+EarlyStopping counter: 2 out of 300
+Epoch: 36/800... Loss: 0.6837... Val Loss: 0.7764
+EarlyStopping counter: 3 out of 300
+Epoch: 37/800... Loss: 0.6138... Val Loss: 0.6991
+EarlyStopping counter: 4 out of 300
+Epoch: 38/800... Loss: 0.5902... Val Loss: 0.6971
+EarlyStopping counter: 5 out of 300
+Epoch: 39/800... Loss: 0.5413... Val Loss: 0.6281
+Validation loss decreased (0.690532 --> 0.628112).  Saving model ...
+Epoch: 40/800... Loss: 0.5514... Val Loss: 0.8102
+EarlyStopping counter: 1 out of 300
+Epoch: 41/800... Loss: 0.5651... Val Loss: 0.6507
+EarlyStopping counter: 2 out of 300
+Epoch: 42/800... Loss: 0.4912... Val Loss: 0.5497
+Validation loss decreased (0.628112 --> 0.549667).  Saving model ...
+Epoch: 43/800... Loss: 0.5155... Val Loss: 0.6885
+EarlyStopping counter: 1 out of 300
+Epoch: 44/800... Loss: 0.4955... Val Loss: 0.6042
+EarlyStopping counter: 2 out of 300
+Epoch: 45/800... Loss: 0.5051... Val Loss: 0.6905
+EarlyStopping counter: 3 out of 300
+Epoch: 46/800... Loss: 0.5006... Val Loss: 0.5950
+EarlyStopping counter: 4 out of 300
+Epoch: 47/800... Loss: 0.5033... Val Loss: 0.5286
+Validation loss decreased (0.549667 --> 0.528597).  Saving model ...
+Epoch: 48/800... Loss: 0.5010... Val Loss: 0.6605
+EarlyStopping counter: 1 out of 300
+Epoch: 49/800... Loss: 0.4698... Val Loss: 0.7204
+EarlyStopping counter: 2 out of 300
+Epoch: 50/800... Loss: 0.4635... Val Loss: 0.5212
+Validation loss decreased (0.528597 --> 0.521194).  Saving model ...
+Epoch: 51/800... Loss: 0.5194... Val Loss: 0.5965
+EarlyStopping counter: 1 out of 300
+Epoch: 52/800... Loss: 0.4790... Val Loss: 0.6796
+EarlyStopping counter: 2 out of 300
+Epoch: 53/800... Loss: 0.4504... Val Loss: 0.6425
+EarlyStopping counter: 3 out of 300
+Epoch: 54/800... Loss: 0.4225... Val Loss: 0.5318
+EarlyStopping counter: 4 out of 300
+Epoch: 55/800... Loss: 0.4106... Val Loss: 0.6778
+EarlyStopping counter: 5 out of 300
+Epoch: 56/800... Loss: 0.4247... Val Loss: 0.5246
+EarlyStopping counter: 6 out of 300
+Epoch: 57/800... Loss: 0.4009... Val Loss: 0.6627
+EarlyStopping counter: 7 out of 300
+Epoch: 58/800... Loss: 0.3976... Val Loss: 0.6995
+EarlyStopping counter: 8 out of 300
+Epoch: 59/800... Loss: 0.3959... Val Loss: 0.5488
+EarlyStopping counter: 9 out of 300
+Epoch: 60/800... Loss: 0.3738... Val Loss: 0.5609
+EarlyStopping counter: 10 out of 300
+Epoch: 61/800... Loss: 0.3852... Val Loss: 0.5659
+EarlyStopping counter: 11 out of 300
+Epoch: 62/800... Loss: 0.3738... Val Loss: 0.6951
+EarlyStopping counter: 12 out of 300
+Epoch: 63/800... Loss: 0.3969... Val Loss: 0.6556
+EarlyStopping counter: 13 out of 300
+Epoch: 64/800... Loss: 0.4177... Val Loss: 0.5975
+EarlyStopping counter: 14 out of 300
+Epoch: 65/800... Loss: 0.4445... Val Loss: 0.6396
+EarlyStopping counter: 15 out of 300
+Epoch: 66/800... Loss: 0.3966... Val Loss: 0.6244
+EarlyStopping counter: 16 out of 300
+Epoch: 67/800... Loss: 0.3813... Val Loss: 0.5972
+EarlyStopping counter: 17 out of 300
+Epoch: 68/800... Loss: 0.3955... Val Loss: 0.5425
+EarlyStopping counter: 18 out of 300
+Epoch: 69/800... Loss: 0.3931... Val Loss: 0.4986
+Validation loss decreased (0.521194 --> 0.498585).  Saving model ...
+Epoch: 70/800... Loss: 0.3485... Val Loss: 0.5712
+EarlyStopping counter: 1 out of 300
+Epoch: 71/800... Loss: 0.3528... Val Loss: 0.5490
+EarlyStopping counter: 2 out of 300
+Epoch: 72/800... Loss: 0.3785... Val Loss: 0.5787
+EarlyStopping counter: 3 out of 300
+Epoch: 73/800... Loss: 0.3842... Val Loss: 0.6999
+EarlyStopping counter: 4 out of 300
+Epoch: 74/800... Loss: 0.3581... Val Loss: 0.4926
+Validation loss decreased (0.498585 --> 0.492635).  Saving model ...
+Epoch: 75/800... Loss: 0.3940... Val Loss: 0.5237
+EarlyStopping counter: 1 out of 300
+Epoch: 76/800... Loss: 0.3642... Val Loss: 0.6476
+EarlyStopping counter: 2 out of 300
+Epoch: 77/800... Loss: 0.3833... Val Loss: 0.6271
+EarlyStopping counter: 3 out of 300
+Epoch: 78/800... Loss: 0.4193... Val Loss: 0.5850
+EarlyStopping counter: 4 out of 300
+Epoch: 79/800... Loss: 0.3828... Val Loss: 0.5455
+EarlyStopping counter: 5 out of 300
+Epoch: 80/800... Loss: 0.3469... Val Loss: 0.4758
+Validation loss decreased (0.492635 --> 0.475806).  Saving model ...
+Epoch: 81/800... Loss: 0.3586... Val Loss: 0.6113
+EarlyStopping counter: 1 out of 300
+Epoch: 82/800... Loss: 0.4029... Val Loss: 0.4850
+EarlyStopping counter: 2 out of 300
+Epoch: 83/800... Loss: 0.3887... Val Loss: 0.5911
+EarlyStopping counter: 3 out of 300
+Epoch: 84/800... Loss: 0.3911... Val Loss: 0.4665
+Validation loss decreased (0.475806 --> 0.466453).  Saving model ...
+Epoch: 85/800... Loss: 0.3802... Val Loss: 0.5861
+EarlyStopping counter: 1 out of 300
+Epoch: 86/800... Loss: 0.3665... Val Loss: 0.5175
+EarlyStopping counter: 2 out of 300
+Epoch: 87/800... Loss: 0.3375... Val Loss: 0.4748
+EarlyStopping counter: 3 out of 300
+Epoch: 88/800... Loss: 0.3428... Val Loss: 0.4981
+EarlyStopping counter: 4 out of 300
+Epoch: 89/800... Loss: 0.3455... Val Loss: 0.5153
+EarlyStopping counter: 5 out of 300
+Epoch: 90/800... Loss: 0.3320... Val Loss: 0.5508
+EarlyStopping counter: 6 out of 300
+Epoch: 91/800... Loss: 0.3488... Val Loss: 0.5174
+EarlyStopping counter: 7 out of 300
+Epoch: 92/800... Loss: 0.3203... Val Loss: 0.4039
+Validation loss decreased (0.466453 --> 0.403904).  Saving model ...
+Epoch: 93/800... Loss: 0.3363... Val Loss: 0.4988
+EarlyStopping counter: 1 out of 300
+Epoch: 94/800... Loss: 0.3315... Val Loss: 0.4802
+EarlyStopping counter: 2 out of 300
+Epoch: 95/800... Loss: 0.3288... Val Loss: 0.5898
+EarlyStopping counter: 3 out of 300
+Epoch: 96/800... Loss: 0.3455... Val Loss: 0.5789
+EarlyStopping counter: 4 out of 300
+Epoch: 97/800... Loss: 0.3396... Val Loss: 0.5361
+EarlyStopping counter: 5 out of 300
+Epoch: 98/800... Loss: 0.3411... Val Loss: 0.4825
+EarlyStopping counter: 6 out of 300
+Epoch: 99/800... Loss: 0.3031... Val Loss: 0.5658
+EarlyStopping counter: 7 out of 300
+Epoch: 100/800... Loss: 0.3736... Val Loss: 0.5752
+EarlyStopping counter: 8 out of 300
+Epoch: 101/800... Loss: 0.3121... Val Loss: 0.4265
+EarlyStopping counter: 9 out of 300
+Epoch: 102/800... Loss: 0.3515... Val Loss: 0.5416
+EarlyStopping counter: 10 out of 300
+Epoch: 103/800... Loss: 0.3310... Val Loss: 0.5022
+EarlyStopping counter: 11 out of 300
+Epoch: 104/800... Loss: 0.3540... Val Loss: 0.5455
+EarlyStopping counter: 12 out of 300
+Epoch: 105/800... Loss: 0.3495... Val Loss: 0.5531
+EarlyStopping counter: 13 out of 300
+Epoch: 106/800... Loss: 0.3332... Val Loss: 0.4755
+EarlyStopping counter: 14 out of 300
+Epoch: 107/800... Loss: 0.3382... Val Loss: 0.5427
+EarlyStopping counter: 15 out of 300
+Epoch: 108/800... Loss: 0.3666... Val Loss: 0.5012
+EarlyStopping counter: 16 out of 300
+Epoch: 109/800... Loss: 0.3590... Val Loss: 0.5216
+EarlyStopping counter: 17 out of 300
+Epoch: 110/800... Loss: 0.3343... Val Loss: 0.4917
+EarlyStopping counter: 18 out of 300
+Epoch: 111/800... Loss: 0.3169... Val Loss: 0.5402
+EarlyStopping counter: 19 out of 300
+Epoch: 112/800... Loss: 0.3497... Val Loss: 0.4419
+EarlyStopping counter: 20 out of 300
+Epoch: 113/800... Loss: 0.3160... Val Loss: 0.4737
+EarlyStopping counter: 21 out of 300
+Epoch: 114/800... Loss: 0.3326... Val Loss: 0.4792
+EarlyStopping counter: 22 out of 300
+Epoch: 115/800... Loss: 0.3049... Val Loss: 0.5571
+EarlyStopping counter: 23 out of 300
+Epoch: 116/800... Loss: 0.3084... Val Loss: 0.5405
+EarlyStopping counter: 24 out of 300
+Epoch: 117/800... Loss: 0.3551... Val Loss: 0.4934
+EarlyStopping counter: 25 out of 300
+Epoch: 118/800... Loss: 0.3040... Val Loss: 0.5524
+EarlyStopping counter: 26 out of 300
+Epoch: 119/800... Loss: 0.2840... Val Loss: 0.5970
+EarlyStopping counter: 27 out of 300
+Epoch: 120/800... Loss: 0.3323... Val Loss: 0.5253
+EarlyStopping counter: 28 out of 300
+Epoch: 121/800... Loss: 0.3236... Val Loss: 0.4637
+EarlyStopping counter: 29 out of 300
+Epoch: 122/800... Loss: 0.3058... Val Loss: 0.5429
+EarlyStopping counter: 30 out of 300
+Epoch: 123/800... Loss: 0.3403... Val Loss: 0.5005
+EarlyStopping counter: 31 out of 300
+Epoch: 124/800... Loss: 0.3458... Val Loss: 0.6587
+EarlyStopping counter: 32 out of 300
+Epoch: 125/800... Loss: 0.3017... Val Loss: 0.5333
+EarlyStopping counter: 33 out of 300
+Epoch: 126/800... Loss: 0.3138... Val Loss: 0.6344
+EarlyStopping counter: 34 out of 300
+Epoch: 127/800... Loss: 0.3249... Val Loss: 0.6524
+EarlyStopping counter: 35 out of 300
+Epoch: 128/800... Loss: 0.3106... Val Loss: 0.5888
+EarlyStopping counter: 36 out of 300
+Epoch: 129/800... Loss: 0.3540... Val Loss: 0.4523
+EarlyStopping counter: 37 out of 300
+Epoch: 130/800... Loss: 0.3041... Val Loss: 0.5772
+EarlyStopping counter: 38 out of 300
+Epoch: 131/800... Loss: 0.3327... Val Loss: 0.5518
+EarlyStopping counter: 39 out of 300
+Epoch: 132/800... Loss: 0.3200... Val Loss: 0.5217
+EarlyStopping counter: 40 out of 300
+Epoch: 133/800... Loss: 0.3315... Val Loss: 0.5166
+EarlyStopping counter: 41 out of 300
+Epoch: 134/800... Loss: 0.3355... Val Loss: 0.4691
+EarlyStopping counter: 42 out of 300
+Epoch: 135/800... Loss: 0.2950... Val Loss: 0.4603
+EarlyStopping counter: 43 out of 300
+Epoch: 136/800... Loss: 0.3233... Val Loss: 0.4811
+EarlyStopping counter: 44 out of 300
+Epoch: 137/800... Loss: 0.3264... Val Loss: 0.4754
+EarlyStopping counter: 45 out of 300
+Epoch: 138/800... Loss: 0.3320... Val Loss: 0.4678
+EarlyStopping counter: 46 out of 300
+Epoch: 139/800... Loss: 0.3422... Val Loss: 0.5290
+EarlyStopping counter: 47 out of 300
+Epoch: 140/800... Loss: 0.3092... Val Loss: 0.5957
+EarlyStopping counter: 48 out of 300
+Epoch: 141/800... Loss: 0.3203... Val Loss: 0.5084
+EarlyStopping counter: 49 out of 300
+Epoch: 142/800... Loss: 0.3348... Val Loss: 0.4843
+EarlyStopping counter: 50 out of 300
+Epoch: 143/800... Loss: 0.3480... Val Loss: 0.4824
+EarlyStopping counter: 51 out of 300
+Epoch: 144/800... Loss: 0.3321... Val Loss: 0.5149
+EarlyStopping counter: 52 out of 300
+Epoch: 145/800... Loss: 0.3224... Val Loss: 0.4352
+EarlyStopping counter: 53 out of 300
+Epoch: 146/800... Loss: 0.2895... Val Loss: 0.5601
+EarlyStopping counter: 54 out of 300
+Epoch: 147/800... Loss: 0.3567... Val Loss: 0.5399
+EarlyStopping counter: 55 out of 300
+Epoch: 148/800... Loss: 0.3270... Val Loss: 0.5805
+EarlyStopping counter: 56 out of 300
+Epoch: 149/800... Loss: 0.2851... Val Loss: 0.5082
+EarlyStopping counter: 57 out of 300
+Epoch: 150/800... Loss: 0.3169... Val Loss: 0.4944
+EarlyStopping counter: 58 out of 300
+Epoch: 151/800... Loss: 0.3445... Val Loss: 0.5446
+EarlyStopping counter: 59 out of 300
+Epoch: 152/800... Loss: 0.3179... Val Loss: 0.5619
+EarlyStopping counter: 60 out of 300
+Epoch: 153/800... Loss: 0.3005... Val Loss: 0.5138
+EarlyStopping counter: 61 out of 300
+Epoch: 154/800... Loss: 0.3654... Val Loss: 0.5336
+EarlyStopping counter: 62 out of 300
+Epoch: 155/800... Loss: 0.3103... Val Loss: 0.4754
+EarlyStopping counter: 63 out of 300
+Epoch: 156/800... Loss: 0.3048... Val Loss: 0.5459
+EarlyStopping counter: 64 out of 300
+Epoch: 157/800... Loss: 0.3204... Val Loss: 0.5171
+EarlyStopping counter: 65 out of 300
+Epoch: 158/800... Loss: 0.3049... Val Loss: 0.4735
+EarlyStopping counter: 66 out of 300
+Epoch: 159/800... Loss: 0.3089... Val Loss: 0.5415
+EarlyStopping counter: 67 out of 300
+Epoch: 160/800... Loss: 0.3190... Val Loss: 0.4932
+EarlyStopping counter: 68 out of 300
+Epoch: 161/800... Loss: 0.3242... Val Loss: 0.5154
+EarlyStopping counter: 69 out of 300
+Epoch: 162/800... Loss: 0.3168... Val Loss: 0.4662
+EarlyStopping counter: 70 out of 300
+Epoch: 163/800... Loss: 0.2980... Val Loss: 0.5234
+EarlyStopping counter: 71 out of 300
+Epoch: 164/800... Loss: 0.3261... Val Loss: 0.6002
+EarlyStopping counter: 72 out of 300
+Epoch: 165/800... Loss: 0.3281... Val Loss: 0.4793
+EarlyStopping counter: 73 out of 300
+Epoch: 166/800... Loss: 0.3051... Val Loss: 0.5596
+EarlyStopping counter: 74 out of 300
+Epoch: 167/800... Loss: 0.3294... Val Loss: 0.5448
+EarlyStopping counter: 75 out of 300
+Epoch: 168/800... Loss: 0.3517... Val Loss: 0.5833
+EarlyStopping counter: 76 out of 300
+Epoch: 169/800... Loss: 0.3181... Val Loss: 0.5327
+EarlyStopping counter: 77 out of 300
+Epoch: 170/800... Loss: 0.3357... Val Loss: 0.4961
+EarlyStopping counter: 78 out of 300
+Epoch: 171/800... Loss: 0.2949... Val Loss: 0.5476
+EarlyStopping counter: 79 out of 300
+Epoch: 172/800... Loss: 0.3350... Val Loss: 0.5693
+EarlyStopping counter: 80 out of 300
+Epoch: 173/800... Loss: 0.3164... Val Loss: 0.4932
+EarlyStopping counter: 81 out of 300
+Epoch: 174/800... Loss: 0.3325... Val Loss: 0.5168
+EarlyStopping counter: 82 out of 300
+Epoch: 175/800... Loss: 0.3217... Val Loss: 0.4185
+EarlyStopping counter: 83 out of 300
+Epoch: 176/800... Loss: 0.2764... Val Loss: 0.4130
+EarlyStopping counter: 84 out of 300
+Epoch: 177/800... Loss: 0.3183... Val Loss: 0.4783
+EarlyStopping counter: 85 out of 300
+Epoch: 178/800... Loss: 0.3258... Val Loss: 0.5112
+EarlyStopping counter: 86 out of 300
+Epoch: 179/800... Loss: 0.2982... Val Loss: 0.6020
+EarlyStopping counter: 87 out of 300
+Epoch: 180/800... Loss: 0.3135... Val Loss: 0.4677
+EarlyStopping counter: 88 out of 300
+Epoch: 181/800... Loss: 0.3158... Val Loss: 0.4421
+EarlyStopping counter: 89 out of 300
+Epoch: 182/800... Loss: 0.3188... Val Loss: 0.5468
+EarlyStopping counter: 90 out of 300
+Epoch: 183/800... Loss: 0.3284... Val Loss: 0.4579
+EarlyStopping counter: 91 out of 300
+Epoch: 184/800... Loss: 0.2974... Val Loss: 0.4622
+EarlyStopping counter: 92 out of 300
+Epoch: 185/800... Loss: 0.3323... Val Loss: 0.4427
+EarlyStopping counter: 93 out of 300
+Epoch: 186/800... Loss: 0.3448... Val Loss: 0.5278
+EarlyStopping counter: 94 out of 300
+Epoch: 187/800... Loss: 0.2867... Val Loss: 0.4602
+EarlyStopping counter: 95 out of 300
+Epoch: 188/800... Loss: 0.3432... Val Loss: 0.5010
+EarlyStopping counter: 96 out of 300
+Epoch: 189/800... Loss: 0.3155... Val Loss: 0.5006
+EarlyStopping counter: 97 out of 300
+Epoch: 190/800... Loss: 0.3099... Val Loss: 0.4496
+EarlyStopping counter: 98 out of 300
+Epoch: 191/800... Loss: 0.3178... Val Loss: 0.5085
+EarlyStopping counter: 99 out of 300
+Epoch: 192/800... Loss: 0.3223... Val Loss: 0.6188
+EarlyStopping counter: 100 out of 300
+Epoch: 193/800... Loss: 0.3290... Val Loss: 0.4056
+EarlyStopping counter: 101 out of 300
+Epoch: 194/800... Loss: 0.2868... Val Loss: 0.4338
+EarlyStopping counter: 102 out of 300
+Epoch: 195/800... Loss: 0.2810... Val Loss: 0.6033
+EarlyStopping counter: 103 out of 300
+Epoch: 196/800... Loss: 0.3547... Val Loss: 0.4473
+EarlyStopping counter: 104 out of 300
+Epoch: 197/800... Loss: 0.3332... Val Loss: 0.4843
+EarlyStopping counter: 105 out of 300
+Epoch: 198/800... Loss: 0.2990... Val Loss: 0.5588
+EarlyStopping counter: 106 out of 300
+Epoch: 199/800... Loss: 0.3330... Val Loss: 0.4126
+EarlyStopping counter: 107 out of 300
+Epoch: 200/800... Loss: 0.2890... Val Loss: 0.4993
+EarlyStopping counter: 108 out of 300
+Epoch: 201/800... Loss: 0.3463... Val Loss: 0.4181
+EarlyStopping counter: 109 out of 300
+Epoch: 202/800... Loss: 0.2873... Val Loss: 0.4499
+EarlyStopping counter: 110 out of 300
+Epoch: 203/800... Loss: 0.3333... Val Loss: 0.5109
+EarlyStopping counter: 111 out of 300
+Epoch: 204/800... Loss: 0.3073... Val Loss: 0.5149
+EarlyStopping counter: 112 out of 300
+Epoch: 205/800... Loss: 0.3503... Val Loss: 0.5515
+EarlyStopping counter: 113 out of 300
+Epoch: 206/800... Loss: 0.2964... Val Loss: 0.4308
+EarlyStopping counter: 114 out of 300
+Epoch: 207/800... Loss: 0.2936... Val Loss: 0.5047
+EarlyStopping counter: 115 out of 300
+Epoch: 208/800... Loss: 0.2974... Val Loss: 0.5085
+EarlyStopping counter: 116 out of 300
+Epoch: 209/800... Loss: 0.2815... Val Loss: 0.4399
+EarlyStopping counter: 117 out of 300
+Epoch: 210/800... Loss: 0.3400... Val Loss: 0.5331
+EarlyStopping counter: 118 out of 300
+Epoch: 211/800... Loss: 0.3046... Val Loss: 0.5513
+EarlyStopping counter: 119 out of 300
+Epoch: 212/800... Loss: 0.2980... Val Loss: 0.4313
+EarlyStopping counter: 120 out of 300
+Epoch: 213/800... Loss: 0.2839... Val Loss: 0.5476
+EarlyStopping counter: 121 out of 300
+Epoch: 214/800... Loss: 0.2955... Val Loss: 0.5926
+EarlyStopping counter: 122 out of 300
+Epoch: 215/800... Loss: 0.2830... Val Loss: 0.5414
+EarlyStopping counter: 123 out of 300
+Epoch: 216/800... Loss: 0.2953... Val Loss: 0.4267
+EarlyStopping counter: 124 out of 300
+Epoch: 217/800... Loss: 0.3087... Val Loss: 0.4418
+EarlyStopping counter: 125 out of 300
+Epoch: 218/800... Loss: 0.3314... Val Loss: 0.5567
+EarlyStopping counter: 126 out of 300
+Epoch: 219/800... Loss: 0.3370... Val Loss: 0.4993
+EarlyStopping counter: 127 out of 300
+Epoch: 220/800... Loss: 0.3200... Val Loss: 0.4216
+EarlyStopping counter: 128 out of 300
+Epoch: 221/800... Loss: 0.3269... Val Loss: 0.4548
+EarlyStopping counter: 129 out of 300
+Epoch: 222/800... Loss: 0.3047... Val Loss: 0.5286
+EarlyStopping counter: 130 out of 300
+Epoch: 223/800... Loss: 0.3249... Val Loss: 0.6029
+EarlyStopping counter: 131 out of 300
+Epoch: 224/800... Loss: 0.2940... Val Loss: 0.5591
+EarlyStopping counter: 132 out of 300
+Epoch: 225/800... Loss: 0.3351... Val Loss: 0.3810
+Validation loss decreased (0.403904 --> 0.380993).  Saving model ...
+Epoch: 226/800... Loss: 0.3286... Val Loss: 0.4134
+EarlyStopping counter: 1 out of 300
+Epoch: 227/800... Loss: 0.2867... Val Loss: 0.5441
+EarlyStopping counter: 2 out of 300
+Epoch: 228/800... Loss: 0.3108... Val Loss: 0.4707
+EarlyStopping counter: 3 out of 300
+Epoch: 229/800... Loss: 0.3158... Val Loss: 0.4700
+EarlyStopping counter: 4 out of 300
+Epoch: 230/800... Loss: 0.2961... Val Loss: 0.5054
+EarlyStopping counter: 5 out of 300
+Epoch: 231/800... Loss: 0.2723... Val Loss: 0.4244
+EarlyStopping counter: 6 out of 300
+Epoch: 232/800... Loss: 0.3142... Val Loss: 0.5404
+EarlyStopping counter: 7 out of 300
+Epoch: 233/800... Loss: 0.2878... Val Loss: 0.4967
+EarlyStopping counter: 8 out of 300
+Epoch: 234/800... Loss: 0.2848... Val Loss: 0.5694
+EarlyStopping counter: 9 out of 300
+Epoch: 235/800... Loss: 0.3080... Val Loss: 0.4704
+EarlyStopping counter: 10 out of 300
+Epoch: 236/800... Loss: 0.2991... Val Loss: 0.4044
+EarlyStopping counter: 11 out of 300
+Epoch: 237/800... Loss: 0.3128... Val Loss: 0.4936
+EarlyStopping counter: 12 out of 300
+Epoch: 238/800... Loss: 0.3007... Val Loss: 0.5394
+EarlyStopping counter: 13 out of 300
+Epoch: 239/800... Loss: 0.3343... Val Loss: 0.4969
+EarlyStopping counter: 14 out of 300
+Epoch: 240/800... Loss: 0.3081... Val Loss: 0.3938
+EarlyStopping counter: 15 out of 300
+Epoch: 241/800... Loss: 0.3097... Val Loss: 0.5497
+EarlyStopping counter: 16 out of 300
+Epoch: 242/800... Loss: 0.2953... Val Loss: 0.4230
+EarlyStopping counter: 17 out of 300
+Epoch: 243/800... Loss: 0.2748... Val Loss: 0.5094
+EarlyStopping counter: 18 out of 300
+Epoch: 244/800... Loss: 0.3330... Val Loss: 0.4063
+EarlyStopping counter: 19 out of 300
+Epoch: 245/800... Loss: 0.2889... Val Loss: 0.4806
+EarlyStopping counter: 20 out of 300
+Epoch: 246/800... Loss: 0.3081... Val Loss: 0.4685
+EarlyStopping counter: 21 out of 300
+Epoch: 247/800... Loss: 0.2909... Val Loss: 0.4911
+EarlyStopping counter: 22 out of 300
+Epoch: 248/800... Loss: 0.3175... Val Loss: 0.4981
+EarlyStopping counter: 23 out of 300
+Epoch: 249/800... Loss: 0.3077... Val Loss: 0.4329
+EarlyStopping counter: 24 out of 300
+Epoch: 250/800... Loss: 0.2724... Val Loss: 0.4322
+EarlyStopping counter: 25 out of 300
+Epoch: 251/800... Loss: 0.2939... Val Loss: 0.4447
+EarlyStopping counter: 26 out of 300
+Epoch: 252/800... Loss: 0.2951... Val Loss: 0.5371
+EarlyStopping counter: 27 out of 300
+Epoch: 253/800... Loss: 0.3148... Val Loss: 0.5547
+EarlyStopping counter: 28 out of 300
+Epoch: 254/800... Loss: 0.2760... Val Loss: 0.4887
+EarlyStopping counter: 29 out of 300
+Epoch: 255/800... Loss: 0.2831... Val Loss: 0.4962
+EarlyStopping counter: 30 out of 300
+Epoch: 256/800... Loss: 0.3060... Val Loss: 0.4269
+EarlyStopping counter: 31 out of 300
+Epoch: 257/800... Loss: 0.3185... Val Loss: 0.4641
+EarlyStopping counter: 32 out of 300
+Epoch: 258/800... Loss: 0.3093... Val Loss: 0.5814
+EarlyStopping counter: 33 out of 300
+Epoch: 259/800... Loss: 0.2747... Val Loss: 0.4352
+EarlyStopping counter: 34 out of 300
+Epoch: 260/800... Loss: 0.3443... Val Loss: 0.4646
+EarlyStopping counter: 35 out of 300
+Epoch: 261/800... Loss: 0.2933... Val Loss: 0.4174
+EarlyStopping counter: 36 out of 300
+Epoch: 262/800... Loss: 0.3000... Val Loss: 0.5567
+EarlyStopping counter: 37 out of 300
+Epoch: 263/800... Loss: 0.2835... Val Loss: 0.4871
+EarlyStopping counter: 38 out of 300
+Epoch: 264/800... Loss: 0.3211... Val Loss: 0.5887
+EarlyStopping counter: 39 out of 300
+Epoch: 265/800... Loss: 0.3008... Val Loss: 0.4374
+EarlyStopping counter: 40 out of 300
+Epoch: 266/800... Loss: 0.3369... Val Loss: 0.5685
+EarlyStopping counter: 41 out of 300
+Epoch: 267/800... Loss: 0.2903... Val Loss: 0.5105
+EarlyStopping counter: 42 out of 300
+Epoch: 268/800... Loss: 0.2701... Val Loss: 0.4821
+EarlyStopping counter: 43 out of 300
+Epoch: 269/800... Loss: 0.3077... Val Loss: 0.5782
+EarlyStopping counter: 44 out of 300
+Epoch: 270/800... Loss: 0.2971... Val Loss: 0.4763
+EarlyStopping counter: 45 out of 300
+Epoch: 271/800... Loss: 0.2897... Val Loss: 0.4817
+EarlyStopping counter: 46 out of 300
+Epoch: 272/800... Loss: 0.2987... Val Loss: 0.3700
+Validation loss decreased (0.380993 --> 0.369964).  Saving model ...
+Epoch: 273/800... Loss: 0.3011... Val Loss: 0.5769
+EarlyStopping counter: 1 out of 300
+Epoch: 274/800... Loss: 0.3119... Val Loss: 0.4667
+EarlyStopping counter: 2 out of 300
+Epoch: 275/800... Loss: 0.2991... Val Loss: 0.4423
+EarlyStopping counter: 3 out of 300
+Epoch: 276/800... Loss: 0.3367... Val Loss: 0.4714
+EarlyStopping counter: 4 out of 300
+Epoch: 277/800... Loss: 0.2960... Val Loss: 0.5574
+EarlyStopping counter: 5 out of 300
+Epoch: 278/800... Loss: 0.2835... Val Loss: 0.5432
+EarlyStopping counter: 6 out of 300
+Epoch: 279/800... Loss: 0.3017... Val Loss: 0.4882
+EarlyStopping counter: 7 out of 300
+Epoch: 280/800... Loss: 0.3288... Val Loss: 0.5352
+EarlyStopping counter: 8 out of 300
+Epoch: 281/800... Loss: 0.3139... Val Loss: 0.4958
+EarlyStopping counter: 9 out of 300
+Epoch: 282/800... Loss: 0.2839... Val Loss: 0.4680
+EarlyStopping counter: 10 out of 300
+Epoch: 283/800... Loss: 0.2942... Val Loss: 0.5457
+EarlyStopping counter: 11 out of 300
+Epoch: 284/800... Loss: 0.3041... Val Loss: 0.4723
+EarlyStopping counter: 12 out of 300
+Epoch: 285/800... Loss: 0.3139... Val Loss: 0.4307
+EarlyStopping counter: 13 out of 300
+Epoch: 286/800... Loss: 0.2888... Val Loss: 0.3851
+EarlyStopping counter: 14 out of 300
+Epoch: 287/800... Loss: 0.2803... Val Loss: 0.5544
+EarlyStopping counter: 15 out of 300
+Epoch: 288/800... Loss: 0.2838... Val Loss: 0.4792
+EarlyStopping counter: 16 out of 300
+Epoch: 289/800... Loss: 0.3185... Val Loss: 0.4901
+EarlyStopping counter: 17 out of 300
+Epoch: 290/800... Loss: 0.3230... Val Loss: 0.5097
+EarlyStopping counter: 18 out of 300
+Epoch: 291/800... Loss: 0.3214... Val Loss: 0.5181
+EarlyStopping counter: 19 out of 300
+Epoch: 292/800... Loss: 0.3110... Val Loss: 0.5423
+EarlyStopping counter: 20 out of 300
+Epoch: 293/800... Loss: 0.3106... Val Loss: 0.4867
+EarlyStopping counter: 21 out of 300
+Epoch: 294/800... Loss: 0.3095... Val Loss: 0.4144
+EarlyStopping counter: 22 out of 300
+Epoch: 295/800... Loss: 0.3095... Val Loss: 0.4440
+EarlyStopping counter: 23 out of 300
+Epoch: 296/800... Loss: 0.2836... Val Loss: 0.4669
+EarlyStopping counter: 24 out of 300
+Epoch: 297/800... Loss: 0.2834... Val Loss: 0.5090
+EarlyStopping counter: 25 out of 300
+Epoch: 298/800... Loss: 0.3182... Val Loss: 0.4548
+EarlyStopping counter: 26 out of 300
+Epoch: 299/800... Loss: 0.3105... Val Loss: 0.4235
+EarlyStopping counter: 27 out of 300
+Epoch: 300/800... Loss: 0.3226... Val Loss: 0.5436
+EarlyStopping counter: 28 out of 300
+Epoch: 301/800... Loss: 0.3308... Val Loss: 0.4825
+EarlyStopping counter: 29 out of 300
+Epoch: 302/800... Loss: 0.2821... Val Loss: 0.4891
+EarlyStopping counter: 30 out of 300
+Epoch: 303/800... Loss: 0.3008... Val Loss: 0.4519
+EarlyStopping counter: 31 out of 300
+Epoch: 304/800... Loss: 0.3120... Val Loss: 0.4409
+EarlyStopping counter: 32 out of 300
+Epoch: 305/800... Loss: 0.3044... Val Loss: 0.4758
+EarlyStopping counter: 33 out of 300
+Epoch: 306/800... Loss: 0.3230... Val Loss: 0.4914
+EarlyStopping counter: 34 out of 300
+Epoch: 307/800... Loss: 0.3292... Val Loss: 0.4364
+EarlyStopping counter: 35 out of 300
+Epoch: 308/800... Loss: 0.2981... Val Loss: 0.4586
+EarlyStopping counter: 36 out of 300
+Epoch: 309/800... Loss: 0.3187... Val Loss: 0.4386
+EarlyStopping counter: 37 out of 300
+Epoch: 310/800... Loss: 0.3204... Val Loss: 0.5099
+EarlyStopping counter: 38 out of 300
+Epoch: 311/800... Loss: 0.2875... Val Loss: 0.4671
+EarlyStopping counter: 39 out of 300
+Epoch: 312/800... Loss: 0.3445... Val Loss: 0.4414
+EarlyStopping counter: 40 out of 300
+Epoch: 313/800... Loss: 0.2701... Val Loss: 0.6062
+EarlyStopping counter: 41 out of 300
+Epoch: 314/800... Loss: 0.3425... Val Loss: 0.5072
+EarlyStopping counter: 42 out of 300
+Epoch: 315/800... Loss: 0.3104... Val Loss: 0.5298
+EarlyStopping counter: 43 out of 300
+Epoch: 316/800... Loss: 0.2920... Val Loss: 0.5250
+EarlyStopping counter: 44 out of 300
+Epoch: 317/800... Loss: 0.3086... Val Loss: 0.4808
+EarlyStopping counter: 45 out of 300
+Epoch: 318/800... Loss: 0.2726... Val Loss: 0.3914
+EarlyStopping counter: 46 out of 300
+Epoch: 319/800... Loss: 0.2681... Val Loss: 0.4832
+EarlyStopping counter: 47 out of 300
+Epoch: 320/800... Loss: 0.3307... Val Loss: 0.4442
+EarlyStopping counter: 48 out of 300
+Epoch: 321/800... Loss: 0.3159... Val Loss: 0.6040
+EarlyStopping counter: 49 out of 300
+Epoch: 322/800... Loss: 0.2923... Val Loss: 0.4906
+EarlyStopping counter: 50 out of 300
+Epoch: 323/800... Loss: 0.3114... Val Loss: 0.5797
+EarlyStopping counter: 51 out of 300
+Epoch: 324/800... Loss: 0.2857... Val Loss: 0.4812
+EarlyStopping counter: 52 out of 300
+Epoch: 325/800... Loss: 0.3520... Val Loss: 0.5103
+EarlyStopping counter: 53 out of 300
+Epoch: 326/800... Loss: 0.3010... Val Loss: 0.5011
+EarlyStopping counter: 54 out of 300
+Epoch: 327/800... Loss: 0.3281... Val Loss: 0.5439
+EarlyStopping counter: 55 out of 300
+Epoch: 328/800... Loss: 0.3170... Val Loss: 0.4568
+EarlyStopping counter: 56 out of 300
+Epoch: 329/800... Loss: 0.3077... Val Loss: 0.4485
+EarlyStopping counter: 57 out of 300
+Epoch: 330/800... Loss: 0.3024... Val Loss: 0.4835
+EarlyStopping counter: 58 out of 300
+Epoch: 331/800... Loss: 0.3096... Val Loss: 0.5305
+EarlyStopping counter: 59 out of 300
+Epoch: 332/800... Loss: 0.3087... Val Loss: 0.5278
+EarlyStopping counter: 60 out of 300
+Epoch: 333/800... Loss: 0.2977... Val Loss: 0.5265
+EarlyStopping counter: 61 out of 300
+Epoch: 334/800... Loss: 0.3124... Val Loss: 0.4984
+EarlyStopping counter: 62 out of 300
+Epoch: 335/800... Loss: 0.2964... Val Loss: 0.3630
+Validation loss decreased (0.369964 --> 0.363004).  Saving model ...
+Epoch: 336/800... Loss: 0.2992... Val Loss: 0.5522
+EarlyStopping counter: 1 out of 300
+Epoch: 337/800... Loss: 0.2893... Val Loss: 0.5062
+EarlyStopping counter: 2 out of 300
+Epoch: 338/800... Loss: 0.2760... Val Loss: 0.5207
+EarlyStopping counter: 3 out of 300
+Epoch: 339/800... Loss: 0.3156... Val Loss: 0.4512
+EarlyStopping counter: 4 out of 300
+Epoch: 340/800... Loss: 0.3209... Val Loss: 0.5151
+EarlyStopping counter: 5 out of 300
+Epoch: 341/800... Loss: 0.3233... Val Loss: 0.5232
+EarlyStopping counter: 6 out of 300
+Epoch: 342/800... Loss: 0.2995... Val Loss: 0.5340
+EarlyStopping counter: 7 out of 300
+Epoch: 343/800... Loss: 0.3207... Val Loss: 0.4223
+EarlyStopping counter: 8 out of 300
+Epoch: 344/800... Loss: 0.3039... Val Loss: 0.5242
+EarlyStopping counter: 9 out of 300
+Epoch: 345/800... Loss: 0.2886... Val Loss: 0.4471
+EarlyStopping counter: 10 out of 300
+Epoch: 346/800... Loss: 0.3342... Val Loss: 0.4954
+EarlyStopping counter: 11 out of 300
+Epoch: 347/800... Loss: 0.2968... Val Loss: 0.4325
+EarlyStopping counter: 12 out of 300
+Epoch: 348/800... Loss: 0.2963... Val Loss: 0.4910
+EarlyStopping counter: 13 out of 300
+Epoch: 349/800... Loss: 0.3338... Val Loss: 0.5262
+EarlyStopping counter: 14 out of 300
+Epoch: 350/800... Loss: 0.3356... Val Loss: 0.4397
+EarlyStopping counter: 15 out of 300
+Epoch: 351/800... Loss: 0.2844... Val Loss: 0.4674
+EarlyStopping counter: 16 out of 300
+Epoch: 352/800... Loss: 0.3084... Val Loss: 0.4739
+EarlyStopping counter: 17 out of 300
+Epoch: 353/800... Loss: 0.3269... Val Loss: 0.4951
+EarlyStopping counter: 18 out of 300
+Epoch: 354/800... Loss: 0.3488... Val Loss: 0.5383
+EarlyStopping counter: 19 out of 300
+Epoch: 355/800... Loss: 0.3302... Val Loss: 0.4261
+EarlyStopping counter: 20 out of 300
+Epoch: 356/800... Loss: 0.3112... Val Loss: 0.5210
+EarlyStopping counter: 21 out of 300
+Epoch: 357/800... Loss: 0.3334... Val Loss: 0.5218
+EarlyStopping counter: 22 out of 300
+Epoch: 358/800... Loss: 0.2886... Val Loss: 0.4804
+EarlyStopping counter: 23 out of 300
+Epoch: 359/800... Loss: 0.3328... Val Loss: 0.4709
+EarlyStopping counter: 24 out of 300
+Epoch: 360/800... Loss: 0.3424... Val Loss: 0.3892
+EarlyStopping counter: 25 out of 300
+Epoch: 361/800... Loss: 0.3137... Val Loss: 0.4881
+EarlyStopping counter: 26 out of 300
+Epoch: 362/800... Loss: 0.3193... Val Loss: 0.6355
+EarlyStopping counter: 27 out of 300
+Epoch: 363/800... Loss: 0.2949... Val Loss: 0.4481
+EarlyStopping counter: 28 out of 300
+Epoch: 364/800... Loss: 0.3472... Val Loss: 0.5586
+EarlyStopping counter: 29 out of 300
+Epoch: 365/800... Loss: 0.3070... Val Loss: 0.5051
+EarlyStopping counter: 30 out of 300
+Epoch: 366/800... Loss: 0.3099... Val Loss: 0.4311
+EarlyStopping counter: 31 out of 300
+Epoch: 367/800... Loss: 0.3117... Val Loss: 0.3879
+EarlyStopping counter: 32 out of 300
+Epoch: 368/800... Loss: 0.3036... Val Loss: 0.4427
+EarlyStopping counter: 33 out of 300
+Epoch: 369/800... Loss: 0.3302... Val Loss: 0.4642
+EarlyStopping counter: 34 out of 300
+Epoch: 370/800... Loss: 0.3092... Val Loss: 0.5719
+EarlyStopping counter: 35 out of 300
+Epoch: 371/800... Loss: 0.3226... Val Loss: 0.5005
+EarlyStopping counter: 36 out of 300
+Epoch: 372/800... Loss: 0.3138... Val Loss: 0.4630
+EarlyStopping counter: 37 out of 300
+Epoch: 373/800... Loss: 0.3467... Val Loss: 0.5295
+EarlyStopping counter: 38 out of 300
+Epoch: 374/800... Loss: 0.2956... Val Loss: 0.5126
+EarlyStopping counter: 39 out of 300
+Epoch: 375/800... Loss: 0.2978... Val Loss: 0.4100
+EarlyStopping counter: 40 out of 300
+Epoch: 376/800... Loss: 0.2800... Val Loss: 0.5324
+EarlyStopping counter: 41 out of 300
+Epoch: 377/800... Loss: 0.3320... Val Loss: 0.5176
+EarlyStopping counter: 42 out of 300
+Epoch: 378/800... Loss: 0.3200... Val Loss: 0.4826
+EarlyStopping counter: 43 out of 300
+Epoch: 379/800... Loss: 0.3032... Val Loss: 0.4228
+EarlyStopping counter: 44 out of 300
+Epoch: 380/800... Loss: 0.3237... Val Loss: 0.5122
+EarlyStopping counter: 45 out of 300
+Epoch: 381/800... Loss: 0.3346... Val Loss: 0.4688
+EarlyStopping counter: 46 out of 300
+Epoch: 382/800... Loss: 0.3168... Val Loss: 0.5348
+EarlyStopping counter: 47 out of 300
+Epoch: 383/800... Loss: 0.3099... Val Loss: 0.5203
+EarlyStopping counter: 48 out of 300
+Epoch: 384/800... Loss: 0.2913... Val Loss: 0.4970
+EarlyStopping counter: 49 out of 300
+Epoch: 385/800... Loss: 0.2966... Val Loss: 0.5477
+EarlyStopping counter: 50 out of 300
+Epoch: 386/800... Loss: 0.3146... Val Loss: 0.5483
+EarlyStopping counter: 51 out of 300
+Epoch: 387/800... Loss: 0.3214... Val Loss: 0.4812
+EarlyStopping counter: 52 out of 300
+Epoch: 388/800... Loss: 0.3266... Val Loss: 0.5202
+EarlyStopping counter: 53 out of 300
+Epoch: 389/800... Loss: 0.3352... Val Loss: 0.5075
+EarlyStopping counter: 54 out of 300
+Epoch: 390/800... Loss: 0.3126... Val Loss: 0.4746
+EarlyStopping counter: 55 out of 300
+Epoch: 391/800... Loss: 0.2932... Val Loss: 0.4725
+EarlyStopping counter: 56 out of 300
+Epoch: 392/800... Loss: 0.3143... Val Loss: 0.4727
+EarlyStopping counter: 57 out of 300
+Epoch: 393/800... Loss: 0.3574... Val Loss: 0.4658
+EarlyStopping counter: 58 out of 300
+Epoch: 394/800... Loss: 0.3175... Val Loss: 0.4940
+EarlyStopping counter: 59 out of 300
+Epoch: 395/800... Loss: 0.3122... Val Loss: 0.5029
+EarlyStopping counter: 60 out of 300
+Epoch: 396/800... Loss: 0.2989... Val Loss: 0.4211
+EarlyStopping counter: 61 out of 300
+Epoch: 397/800... Loss: 0.3075... Val Loss: 0.4399
+EarlyStopping counter: 62 out of 300
+Epoch: 398/800... Loss: 0.2994... Val Loss: 0.4584
+EarlyStopping counter: 63 out of 300
+Epoch: 399/800... Loss: 0.3355... Val Loss: 0.4703
+EarlyStopping counter: 64 out of 300
+Epoch: 400/800... Loss: 0.3196... Val Loss: 0.4214
+EarlyStopping counter: 65 out of 300
+Epoch: 401/800... Loss: 0.3588... Val Loss: 0.5593
+EarlyStopping counter: 66 out of 300
+Epoch: 402/800... Loss: 0.3209... Val Loss: 0.4419
+EarlyStopping counter: 67 out of 300
+Epoch: 403/800... Loss: 0.2956... Val Loss: 0.4357
+EarlyStopping counter: 68 out of 300
+Epoch: 404/800... Loss: 0.3225... Val Loss: 0.5569
+EarlyStopping counter: 69 out of 300
+Epoch: 405/800... Loss: 0.3125... Val Loss: 0.5054
+EarlyStopping counter: 70 out of 300
+Epoch: 406/800... Loss: 0.3010... Val Loss: 0.4657
+EarlyStopping counter: 71 out of 300
+Epoch: 407/800... Loss: 0.3175... Val Loss: 0.5313
+EarlyStopping counter: 72 out of 300
+Epoch: 408/800... Loss: 0.2833... Val Loss: 0.5621
+EarlyStopping counter: 73 out of 300
+Epoch: 409/800... Loss: 0.3108... Val Loss: 0.5186
+EarlyStopping counter: 74 out of 300
+Epoch: 410/800... Loss: 0.3185... Val Loss: 0.5120
+EarlyStopping counter: 75 out of 300
+Epoch: 411/800... Loss: 0.3191... Val Loss: 0.4799
+EarlyStopping counter: 76 out of 300
+Epoch: 412/800... Loss: 0.3036... Val Loss: 0.4345
+EarlyStopping counter: 77 out of 300
+Epoch: 413/800... Loss: 0.2880... Val Loss: 0.4872
+EarlyStopping counter: 78 out of 300
+Epoch: 414/800... Loss: 0.2938... Val Loss: 0.5262
+EarlyStopping counter: 79 out of 300
+Epoch: 415/800... Loss: 0.3203... Val Loss: 0.4031
+EarlyStopping counter: 80 out of 300
+Epoch: 416/800... Loss: 0.2981... Val Loss: 0.4877
+EarlyStopping counter: 81 out of 300
+Epoch: 417/800... Loss: 0.3160... Val Loss: 0.4697
+EarlyStopping counter: 82 out of 300
+Epoch: 418/800... Loss: 0.2781... Val Loss: 0.5290
+EarlyStopping counter: 83 out of 300
+Epoch: 419/800... Loss: 0.3120... Val Loss: 0.4306
+EarlyStopping counter: 84 out of 300
+Epoch: 420/800... Loss: 0.3376... Val Loss: 0.4964
+EarlyStopping counter: 85 out of 300
+Epoch: 421/800... Loss: 0.3106... Val Loss: 0.3900
+EarlyStopping counter: 86 out of 300
+Epoch: 422/800... Loss: 0.3068... Val Loss: 0.4571
+EarlyStopping counter: 87 out of 300
+Epoch: 423/800... Loss: 0.3280... Val Loss: 0.4848
+EarlyStopping counter: 88 out of 300
+Epoch: 424/800... Loss: 0.2871... Val Loss: 0.4361
+EarlyStopping counter: 89 out of 300
+Epoch: 425/800... Loss: 0.3180... Val Loss: 0.3709
+EarlyStopping counter: 90 out of 300
+Epoch: 426/800... Loss: 0.3210... Val Loss: 0.4876
+EarlyStopping counter: 91 out of 300
+Epoch: 427/800... Loss: 0.2957... Val Loss: 0.4710
+EarlyStopping counter: 92 out of 300
+Epoch: 428/800... Loss: 0.3006... Val Loss: 0.3795
+EarlyStopping counter: 93 out of 300
+Epoch: 429/800... Loss: 0.2939... Val Loss: 0.5113
+EarlyStopping counter: 94 out of 300
+Epoch: 430/800... Loss: 0.3142... Val Loss: 0.4608
+EarlyStopping counter: 95 out of 300
+Epoch: 431/800... Loss: 0.2879... Val Loss: 0.4818
+EarlyStopping counter: 96 out of 300
+Epoch: 432/800... Loss: 0.3099... Val Loss: 0.3935
+EarlyStopping counter: 97 out of 300
+Epoch: 433/800... Loss: 0.2829... Val Loss: 0.4853
+EarlyStopping counter: 98 out of 300
+Epoch: 434/800... Loss: 0.3047... Val Loss: 0.5630
+EarlyStopping counter: 99 out of 300
+Epoch: 435/800... Loss: 0.3312... Val Loss: 0.5343
+EarlyStopping counter: 100 out of 300
+Epoch: 436/800... Loss: 0.3145... Val Loss: 0.5130
+EarlyStopping counter: 101 out of 300
+Epoch: 437/800... Loss: 0.3055... Val Loss: 0.5250
+EarlyStopping counter: 102 out of 300
+Epoch: 438/800... Loss: 0.2982... Val Loss: 0.4622
+EarlyStopping counter: 103 out of 300
+Epoch: 439/800... Loss: 0.3040... Val Loss: 0.3740
+EarlyStopping counter: 104 out of 300
+Epoch: 440/800... Loss: 0.3145... Val Loss: 0.5659
+EarlyStopping counter: 105 out of 300
+Epoch: 441/800... Loss: 0.3124... Val Loss: 0.5024
+EarlyStopping counter: 106 out of 300
+Epoch: 442/800... Loss: 0.2888... Val Loss: 0.5348
+EarlyStopping counter: 107 out of 300
+Epoch: 443/800... Loss: 0.3218... Val Loss: 0.5417
+EarlyStopping counter: 108 out of 300
+Epoch: 444/800... Loss: 0.3321... Val Loss: 0.5465
+EarlyStopping counter: 109 out of 300
+Epoch: 445/800... Loss: 0.2964... Val Loss: 0.3950
+EarlyStopping counter: 110 out of 300
+Epoch: 446/800... Loss: 0.3174... Val Loss: 0.4850
+EarlyStopping counter: 111 out of 300
+Epoch: 447/800... Loss: 0.2861... Val Loss: 0.4817
+EarlyStopping counter: 112 out of 300
+Epoch: 448/800... Loss: 0.3065... Val Loss: 0.5838
+EarlyStopping counter: 113 out of 300
+Epoch: 449/800... Loss: 0.3143... Val Loss: 0.3865
+EarlyStopping counter: 114 out of 300
+Epoch: 450/800... Loss: 0.3150... Val Loss: 0.4687
+EarlyStopping counter: 115 out of 300
+Epoch: 451/800... Loss: 0.3300... Val Loss: 0.4718
+EarlyStopping counter: 116 out of 300
+Epoch: 452/800... Loss: 0.3237... Val Loss: 0.5200
+EarlyStopping counter: 117 out of 300
+Epoch: 453/800... Loss: 0.3182... Val Loss: 0.4620
+EarlyStopping counter: 118 out of 300
+Epoch: 454/800... Loss: 0.3022... Val Loss: 0.6268
+EarlyStopping counter: 119 out of 300
+Epoch: 455/800... Loss: 0.3118... Val Loss: 0.5047
+EarlyStopping counter: 120 out of 300
+Epoch: 456/800... Loss: 0.2913... Val Loss: 0.4598
+EarlyStopping counter: 121 out of 300
+Epoch: 457/800... Loss: 0.3289... Val Loss: 0.6174
+EarlyStopping counter: 122 out of 300
+Epoch: 458/800... Loss: 0.3224... Val Loss: 0.4905
+EarlyStopping counter: 123 out of 300
+Epoch: 459/800... Loss: 0.3060... Val Loss: 0.4717
+EarlyStopping counter: 124 out of 300
+Epoch: 460/800... Loss: 0.3515... Val Loss: 0.4864
+EarlyStopping counter: 125 out of 300
+Epoch: 461/800... Loss: 0.3498... Val Loss: 0.4338
+EarlyStopping counter: 126 out of 300
+Epoch: 462/800... Loss: 0.3105... Val Loss: 0.4292
+EarlyStopping counter: 127 out of 300
+Epoch: 463/800... Loss: 0.3114... Val Loss: 0.5118
+EarlyStopping counter: 128 out of 300
+Epoch: 464/800... Loss: 0.3076... Val Loss: 0.5074
+EarlyStopping counter: 129 out of 300
+Epoch: 465/800... Loss: 0.2926... Val Loss: 0.4790
+EarlyStopping counter: 130 out of 300
+Epoch: 466/800... Loss: 0.3500... Val Loss: 0.4849
+EarlyStopping counter: 131 out of 300
+Epoch: 467/800... Loss: 0.2857... Val Loss: 0.3967
+EarlyStopping counter: 132 out of 300
+Epoch: 468/800... Loss: 0.3262... Val Loss: 0.5344
+EarlyStopping counter: 133 out of 300
+Epoch: 469/800... Loss: 0.2993... Val Loss: 0.5088
+EarlyStopping counter: 134 out of 300
+Epoch: 470/800... Loss: 0.3299... Val Loss: 0.4600
+EarlyStopping counter: 135 out of 300
+Epoch: 471/800... Loss: 0.3062... Val Loss: 0.5170
+EarlyStopping counter: 136 out of 300
+Epoch: 472/800... Loss: 0.3195... Val Loss: 0.5184
+EarlyStopping counter: 137 out of 300
+Epoch: 473/800... Loss: 0.3239... Val Loss: 0.5285
+EarlyStopping counter: 138 out of 300
+Epoch: 474/800... Loss: 0.3237... Val Loss: 0.5433
+EarlyStopping counter: 139 out of 300
+Epoch: 475/800... Loss: 0.3278... Val Loss: 0.5780
+EarlyStopping counter: 140 out of 300
+Epoch: 476/800... Loss: 0.3065... Val Loss: 0.5025
+EarlyStopping counter: 141 out of 300
+Epoch: 477/800... Loss: 0.3225... Val Loss: 0.4637
+EarlyStopping counter: 142 out of 300
+Epoch: 478/800... Loss: 0.3292... Val Loss: 0.5801
+EarlyStopping counter: 143 out of 300
+Epoch: 479/800... Loss: 0.3223... Val Loss: 0.4761
+EarlyStopping counter: 144 out of 300
+Epoch: 480/800... Loss: 0.2810... Val Loss: 0.4596
+EarlyStopping counter: 145 out of 300
+Epoch: 481/800... Loss: 0.3069... Val Loss: 0.4403
+EarlyStopping counter: 146 out of 300
+Epoch: 482/800... Loss: 0.2995... Val Loss: 0.5123
+EarlyStopping counter: 147 out of 300
+Epoch: 483/800... Loss: 0.3005... Val Loss: 0.5356
+EarlyStopping counter: 148 out of 300
+Epoch: 484/800... Loss: 0.3070... Val Loss: 0.3911
+EarlyStopping counter: 149 out of 300
+Epoch: 485/800... Loss: 0.2880... Val Loss: 0.5845
+EarlyStopping counter: 150 out of 300
+Epoch: 486/800... Loss: 0.2739... Val Loss: 0.4380
+EarlyStopping counter: 151 out of 300
+Epoch: 487/800... Loss: 0.3095... Val Loss: 0.4257
+EarlyStopping counter: 152 out of 300
+Epoch: 488/800... Loss: 0.2954... Val Loss: 0.4330
+EarlyStopping counter: 153 out of 300
+Epoch: 489/800... Loss: 0.2868... Val Loss: 0.5212
+EarlyStopping counter: 154 out of 300
+Epoch: 490/800... Loss: 0.2648... Val Loss: 0.5145
+EarlyStopping counter: 155 out of 300
+Epoch: 491/800... Loss: 0.3229... Val Loss: 0.4555
+EarlyStopping counter: 156 out of 300
+Epoch: 492/800... Loss: 0.3006... Val Loss: 0.5768
+EarlyStopping counter: 157 out of 300
+Epoch: 493/800... Loss: 0.2863... Val Loss: 0.4381
+EarlyStopping counter: 158 out of 300
+Epoch: 494/800... Loss: 0.2880... Val Loss: 0.4526
+EarlyStopping counter: 159 out of 300
+Epoch: 495/800... Loss: 0.2968... Val Loss: 0.5069
+EarlyStopping counter: 160 out of 300
+Epoch: 496/800... Loss: 0.2865... Val Loss: 0.4249
+EarlyStopping counter: 161 out of 300
+Epoch: 497/800... Loss: 0.2984... Val Loss: 0.4967
+EarlyStopping counter: 162 out of 300
+Epoch: 498/800... Loss: 0.3332... Val Loss: 0.5457
+EarlyStopping counter: 163 out of 300
+Epoch: 499/800... Loss: 0.3383... Val Loss: 0.5308
+EarlyStopping counter: 164 out of 300
+Epoch: 500/800... Loss: 0.3303... Val Loss: 0.5279
+EarlyStopping counter: 165 out of 300
+Epoch: 501/800... Loss: 0.3428... Val Loss: 0.5261
+EarlyStopping counter: 166 out of 300
+Epoch: 502/800... Loss: 0.3078... Val Loss: 0.5276
+EarlyStopping counter: 167 out of 300
+Epoch: 503/800... Loss: 0.3036... Val Loss: 0.5633
+EarlyStopping counter: 168 out of 300
+Epoch: 504/800... Loss: 0.2859... Val Loss: 0.5358
+EarlyStopping counter: 169 out of 300
+Epoch: 505/800... Loss: 0.3538... Val Loss: 0.4778
+EarlyStopping counter: 170 out of 300
+Epoch: 506/800... Loss: 0.2932... Val Loss: 0.4675
+EarlyStopping counter: 171 out of 300
+Epoch: 507/800... Loss: 0.2898... Val Loss: 0.5053
+EarlyStopping counter: 172 out of 300
+Epoch: 508/800... Loss: 0.3248... Val Loss: 0.4362
+EarlyStopping counter: 173 out of 300
+Epoch: 509/800... Loss: 0.3008... Val Loss: 0.5018
+EarlyStopping counter: 174 out of 300
+Epoch: 510/800... Loss: 0.3144... Val Loss: 0.4418
+EarlyStopping counter: 175 out of 300
+Epoch: 511/800... Loss: 0.3045... Val Loss: 0.4583
+EarlyStopping counter: 176 out of 300
+Epoch: 512/800... Loss: 0.3154... Val Loss: 0.4570
+EarlyStopping counter: 177 out of 300
+Epoch: 513/800... Loss: 0.3162... Val Loss: 0.5024
+EarlyStopping counter: 178 out of 300
+Epoch: 514/800... Loss: 0.3066... Val Loss: 0.5192
+EarlyStopping counter: 179 out of 300
+Epoch: 515/800... Loss: 0.3032... Val Loss: 0.5467
+EarlyStopping counter: 180 out of 300
+Epoch: 516/800... Loss: 0.3344... Val Loss: 0.4780
+EarlyStopping counter: 181 out of 300
+Epoch: 517/800... Loss: 0.2995... Val Loss: 0.4985
+EarlyStopping counter: 182 out of 300
+Epoch: 518/800... Loss: 0.3212... Val Loss: 0.4937
+EarlyStopping counter: 183 out of 300
+Epoch: 519/800... Loss: 0.3019... Val Loss: 0.5232
+EarlyStopping counter: 184 out of 300
+Epoch: 520/800... Loss: 0.3229... Val Loss: 0.5168
+EarlyStopping counter: 185 out of 300
+Epoch: 521/800... Loss: 0.3081... Val Loss: 0.5008
+EarlyStopping counter: 186 out of 300
+Epoch: 522/800... Loss: 0.2937... Val Loss: 0.4859
+EarlyStopping counter: 187 out of 300
+Epoch: 523/800... Loss: 0.2924... Val Loss: 0.4773
+EarlyStopping counter: 188 out of 300
+Epoch: 524/800... Loss: 0.3084... Val Loss: 0.5051
+EarlyStopping counter: 189 out of 300
+Epoch: 525/800... Loss: 0.3042... Val Loss: 0.5893
+EarlyStopping counter: 190 out of 300
+Epoch: 526/800... Loss: 0.2881... Val Loss: 0.5343
+EarlyStopping counter: 191 out of 300
+Epoch: 527/800... Loss: 0.3475... Val Loss: 0.4859
+EarlyStopping counter: 192 out of 300
+Epoch: 528/800... Loss: 0.3011... Val Loss: 0.4946
+EarlyStopping counter: 193 out of 300
+Epoch: 529/800... Loss: 0.3035... Val Loss: 0.4327
+EarlyStopping counter: 194 out of 300
+Epoch: 530/800... Loss: 0.2921... Val Loss: 0.5172
+EarlyStopping counter: 195 out of 300
+Epoch: 531/800... Loss: 0.3044... Val Loss: 0.5230
+EarlyStopping counter: 196 out of 300
+Epoch: 532/800... Loss: 0.3030... Val Loss: 0.5784
+EarlyStopping counter: 197 out of 300
+Epoch: 533/800... Loss: 0.3380... Val Loss: 0.4288
+EarlyStopping counter: 198 out of 300
+Epoch: 534/800... Loss: 0.3402... Val Loss: 0.3953
+EarlyStopping counter: 199 out of 300
+Epoch: 535/800... Loss: 0.3097... Val Loss: 0.4989
+EarlyStopping counter: 200 out of 300
+Epoch: 536/800... Loss: 0.3124... Val Loss: 0.4417
+EarlyStopping counter: 201 out of 300
+Epoch: 537/800... Loss: 0.3357... Val Loss: 0.4192
+EarlyStopping counter: 202 out of 300
+Epoch: 538/800... Loss: 0.2904... Val Loss: 0.5122
+EarlyStopping counter: 203 out of 300
+Epoch: 539/800... Loss: 0.2954... Val Loss: 0.4883
+EarlyStopping counter: 204 out of 300
+Epoch: 540/800... Loss: 0.2954... Val Loss: 0.5329
+EarlyStopping counter: 205 out of 300
+Epoch: 541/800... Loss: 0.3197... Val Loss: 0.5205
+EarlyStopping counter: 206 out of 300
+Epoch: 542/800... Loss: 0.3061... Val Loss: 0.6034
+EarlyStopping counter: 207 out of 300
+Epoch: 543/800... Loss: 0.3031... Val Loss: 0.5409
+EarlyStopping counter: 208 out of 300
+Epoch: 544/800... Loss: 0.3157... Val Loss: 0.5266
+EarlyStopping counter: 209 out of 300
+Epoch: 545/800... Loss: 0.3128... Val Loss: 0.5236
+EarlyStopping counter: 210 out of 300
+Epoch: 546/800... Loss: 0.2932... Val Loss: 0.5290
+EarlyStopping counter: 211 out of 300
+Epoch: 547/800... Loss: 0.3560... Val Loss: 0.4714
+EarlyStopping counter: 212 out of 300
+Epoch: 548/800... Loss: 0.2896... Val Loss: 0.4271
+EarlyStopping counter: 213 out of 300
+Epoch: 549/800... Loss: 0.3296... Val Loss: 0.5505
+EarlyStopping counter: 214 out of 300
+Epoch: 550/800... Loss: 0.2716... Val Loss: 0.4525
+EarlyStopping counter: 215 out of 300
+Epoch: 551/800... Loss: 0.3257... Val Loss: 0.5674
+EarlyStopping counter: 216 out of 300
+Epoch: 552/800... Loss: 0.3161... Val Loss: 0.4001
+EarlyStopping counter: 217 out of 300
+Epoch: 553/800... Loss: 0.3256... Val Loss: 0.4879
+EarlyStopping counter: 218 out of 300
+Epoch: 554/800... Loss: 0.3109... Val Loss: 0.3916
+EarlyStopping counter: 219 out of 300
+Epoch: 555/800... Loss: 0.3362... Val Loss: 0.4129
+EarlyStopping counter: 220 out of 300
+Epoch: 556/800... Loss: 0.3242... Val Loss: 0.5441
+EarlyStopping counter: 221 out of 300
+Epoch: 557/800... Loss: 0.3068... Val Loss: 0.5543
+EarlyStopping counter: 222 out of 300
+Epoch: 558/800... Loss: 0.3261... Val Loss: 0.5339
+EarlyStopping counter: 223 out of 300
+Epoch: 559/800... Loss: 0.3148... Val Loss: 0.4976
+EarlyStopping counter: 224 out of 300
+Epoch: 560/800... Loss: 0.2956... Val Loss: 0.4983
+EarlyStopping counter: 225 out of 300
+Epoch: 561/800... Loss: 0.3099... Val Loss: 0.4022
+EarlyStopping counter: 226 out of 300
+Epoch: 562/800... Loss: 0.3048... Val Loss: 0.3830
+EarlyStopping counter: 227 out of 300

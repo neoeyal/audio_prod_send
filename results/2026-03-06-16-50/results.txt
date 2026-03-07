@@ -1,0 +1,26 @@
+*****
+HYBRID
+alpha is 0.5
+temperature of contrastive loss is 0.05
+ESC_50
+train folds are [1, 2, 3, 5] and test fold is [4]
+Freq mask number 2 and length 32, and time mask number 1 and length is32
+*****
+
+9.5e-05
+
+Epoch: 1/800... Loss: 3.2900... Val Loss: 2.8973
+train_loss1 is 1.3342 and train_loss2 is 1.9558
+val_loss1 is 0.9440 and val_loss2 is 1.9534
+train_acc is 0.0244 and val_acc is 0.0300
+Validation loss decreased (inf --> -0.030000).  Saving model ...
+
+0.00014000000000000001
+
+Epoch: 2/800... Loss: 3.1700... Val Loss: 2.7600
+train_loss1 is 1.2197 and train_loss2 is 1.9503
+val_loss1 is 0.8144 and val_loss2 is 1.9456
+train_acc is 0.0475 and val_acc is 0.1000
+Validation loss decreased (-0.030000 --> -0.100000).  Saving model ...
+
+0.000185

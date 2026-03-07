@@ -11,7 +11,7 @@ path_to_US8K = './data/US8K'
 # Imry: there was a discrepency in the naming of the pretrained representation model path.
 # path_to_classifierModel = './data/results/2020-12-22-10-42/'
 
-supCon_path_for_classifier = './results/2026-02-28-13-05'
+supCon_path_for_classifier = './results/2026-03-06-17-03'
 
 
 ESC10_classIds = [0, 1, 10, 11, 12, 20, 21, 38, 40, 41]
@@ -26,7 +26,7 @@ else:
 if ESC_10 or ESC_50:
 	lr = 5e-4 #for ESC-50 and ESC-10
 	folds = 5
-	test_fold = [2]
+	test_fold = [4]
 	train_folds = list(i for i in range(1, 6) if i != test_fold[0])	
 else:
 	lr = 1e-4 # for US8K

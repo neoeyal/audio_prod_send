@@ -1,0 +1,1327 @@
+*****
+BASELINE
+transfer - augmentation on both waves and specs - 3 channels
+ESC_50
+train folds are [1, 2, 3, 5] and test fold is [4]
+number of freq masks are 2 and their max length is 32
+number of time masks are 1 and their max length is 32
+*****
+
+
+Epoch: 1/800... Loss: 3.8981... Val Loss: 3.8740
+train_acc is 0.0887 and val_acc is 0.2325
+Validation loss decreased (inf --> -0.232500).  Saving model ...
+
+
+Epoch: 2/800... Loss: 3.8313... Val Loss: 3.7946
+train_acc is 0.3356 and val_acc is 0.3825
+Validation loss decreased (-0.232500 --> -0.382500).  Saving model ...
+
+
+Epoch: 3/800... Loss: 3.7329... Val Loss: 3.6902
+train_acc is 0.4794 and val_acc is 0.5075
+Validation loss decreased (-0.382500 --> -0.507500).  Saving model ...
+
+
+Epoch: 4/800... Loss: 3.6219... Val Loss: 3.5995
+train_acc is 0.5606 and val_acc is 0.5000
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 5/800... Loss: 3.5057... Val Loss: 3.5203
+train_acc is 0.6200 and val_acc is 0.5000
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 6/800... Loss: 3.3843... Val Loss: 3.3255
+train_acc is 0.6081 and val_acc is 0.6300
+Validation loss decreased (-0.507500 --> -0.630000).  Saving model ...
+
+
+Epoch: 7/800... Loss: 3.2593... Val Loss: 3.2433
+train_acc is 0.6169 and val_acc is 0.5625
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 8/800... Loss: 3.1122... Val Loss: 3.1004
+train_acc is 0.6469 and val_acc is 0.5800
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 9/800... Loss: 2.9484... Val Loss: 3.1850
+train_acc is 0.6644 and val_acc is 0.4450
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 10/800... Loss: 2.8197... Val Loss: 2.8518
+train_acc is 0.6131 and val_acc is 0.5525
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 11/800... Loss: 2.6529... Val Loss: 2.8619
+train_acc is 0.6362 and val_acc is 0.4475
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 12/800... Loss: 2.4866... Val Loss: 2.6487
+train_acc is 0.6650 and val_acc is 0.4650
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 13/800... Loss: 2.3259... Val Loss: 2.8675
+train_acc is 0.6787 and val_acc is 0.3925
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 14/800... Loss: 2.1741... Val Loss: 2.3261
+train_acc is 0.6931 and val_acc is 0.5375
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 15/800... Loss: 2.0149... Val Loss: 2.5949
+train_acc is 0.7019 and val_acc is 0.4600
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 16/800... Loss: 1.9011... Val Loss: 2.7003
+train_acc is 0.7069 and val_acc is 0.3775
+EarlyStopping counter: 10 out of 300
+EarlyStopping counter: 10 out of 300
+
+
+Epoch: 17/800... Loss: 1.7635... Val Loss: 1.9883
+train_acc is 0.7238 and val_acc is 0.6325
+Validation loss decreased (-0.630000 --> -0.632500).  Saving model ...
+
+
+Epoch: 18/800... Loss: 1.6384... Val Loss: 1.9519
+train_acc is 0.7444 and val_acc is 0.6025
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 19/800... Loss: 1.5383... Val Loss: 1.8994
+train_acc is 0.7594 and val_acc is 0.6075
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 20/800... Loss: 1.4308... Val Loss: 1.7006
+train_acc is 0.7662 and val_acc is 0.6625
+Validation loss decreased (-0.632500 --> -0.662500).  Saving model ...
+
+
+Epoch: 21/800... Loss: 1.3955... Val Loss: 1.5543
+train_acc is 0.7506 and val_acc is 0.7000
+Validation loss decreased (-0.662500 --> -0.700000).  Saving model ...
+
+
+Epoch: 22/800... Loss: 1.3092... Val Loss: 1.7988
+train_acc is 0.7744 and val_acc is 0.5875
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 23/800... Loss: 1.2030... Val Loss: 1.3477
+train_acc is 0.7937 and val_acc is 0.7650
+Validation loss decreased (-0.700000 --> -0.765000).  Saving model ...
+
+
+Epoch: 24/800... Loss: 1.1398... Val Loss: 1.3272
+train_acc is 0.8081 and val_acc is 0.7100
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 25/800... Loss: 1.0742... Val Loss: 1.1766
+train_acc is 0.8181 and val_acc is 0.7675
+Validation loss decreased (-0.765000 --> -0.767500).  Saving model ...
+
+
+Epoch: 26/800... Loss: 0.9814... Val Loss: 0.9946
+train_acc is 0.8331 and val_acc is 0.8450
+Validation loss decreased (-0.767500 --> -0.845000).  Saving model ...
+
+
+Epoch: 27/800... Loss: 0.9516... Val Loss: 1.3978
+train_acc is 0.8363 and val_acc is 0.6950
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 28/800... Loss: 0.9346... Val Loss: 1.2075
+train_acc is 0.8313 and val_acc is 0.7250
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 29/800... Loss: 0.8353... Val Loss: 0.9934
+train_acc is 0.8719 and val_acc is 0.7600
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 30/800... Loss: 0.8114... Val Loss: 0.9285
+train_acc is 0.8588 and val_acc is 0.8200
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 31/800... Loss: 0.7860... Val Loss: 1.0105
+train_acc is 0.8756 and val_acc is 0.7925
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 32/800... Loss: 0.7589... Val Loss: 0.9021
+train_acc is 0.8738 and val_acc is 0.8175
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 33/800... Loss: 0.7335... Val Loss: 0.9029
+train_acc is 0.8656 and val_acc is 0.7950
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 34/800... Loss: 0.7015... Val Loss: 0.9570
+train_acc is 0.8819 and val_acc is 0.7750
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 35/800... Loss: 0.6521... Val Loss: 0.9340
+train_acc is 0.8975 and val_acc is 0.8000
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 36/800... Loss: 0.6349... Val Loss: 0.7281
+train_acc is 0.8931 and val_acc is 0.8600
+Validation loss decreased (-0.845000 --> -0.860000).  Saving model ...
+
+
+Epoch: 37/800... Loss: 0.6026... Val Loss: 0.8029
+train_acc is 0.9106 and val_acc is 0.8375
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 38/800... Loss: 0.5660... Val Loss: 0.7546
+train_acc is 0.9069 and val_acc is 0.8500
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 39/800... Loss: 0.5527... Val Loss: 0.8003
+train_acc is 0.9087 and val_acc is 0.8275
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 40/800... Loss: 0.5208... Val Loss: 0.7229
+train_acc is 0.9225 and val_acc is 0.8575
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 41/800... Loss: 0.4749... Val Loss: 0.7002
+train_acc is 0.9387 and val_acc is 0.8350
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 42/800... Loss: 0.4581... Val Loss: 0.7034
+train_acc is 0.9369 and val_acc is 0.8375
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 43/800... Loss: 0.4331... Val Loss: 0.6034
+train_acc is 0.9375 and val_acc is 0.8750
+Validation loss decreased (-0.860000 --> -0.875000).  Saving model ...
+
+
+Epoch: 44/800... Loss: 0.4532... Val Loss: 0.7107
+train_acc is 0.9287 and val_acc is 0.8375
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 45/800... Loss: 0.4292... Val Loss: 0.6133
+train_acc is 0.9306 and val_acc is 0.8700
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 46/800... Loss: 0.4122... Val Loss: 0.5477
+train_acc is 0.9375 and val_acc is 0.8875
+Validation loss decreased (-0.875000 --> -0.887500).  Saving model ...
+
+
+Epoch: 47/800... Loss: 0.4113... Val Loss: 0.6504
+train_acc is 0.9363 and val_acc is 0.8375
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 48/800... Loss: 0.3865... Val Loss: 0.6538
+train_acc is 0.9463 and val_acc is 0.8625
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 49/800... Loss: 0.3568... Val Loss: 0.5770
+train_acc is 0.9525 and val_acc is 0.8900
+Validation loss decreased (-0.887500 --> -0.890000).  Saving model ...
+
+
+Epoch: 50/800... Loss: 0.3593... Val Loss: 0.5392
+train_acc is 0.9525 and val_acc is 0.8750
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 51/800... Loss: 0.3408... Val Loss: 0.5451
+train_acc is 0.9450 and val_acc is 0.9025
+Validation loss decreased (-0.890000 --> -0.902500).  Saving model ...
+
+
+Epoch: 52/800... Loss: 0.3556... Val Loss: 0.6167
+train_acc is 0.9494 and val_acc is 0.8450
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 53/800... Loss: 0.3545... Val Loss: 0.5585
+train_acc is 0.9494 and val_acc is 0.8725
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 54/800... Loss: 0.3245... Val Loss: 0.5296
+train_acc is 0.9556 and val_acc is 0.8925
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 55/800... Loss: 0.3078... Val Loss: 0.5578
+train_acc is 0.9606 and val_acc is 0.8825
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 56/800... Loss: 0.2828... Val Loss: 0.5236
+train_acc is 0.9637 and val_acc is 0.8825
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 57/800... Loss: 0.2975... Val Loss: 0.5328
+train_acc is 0.9613 and val_acc is 0.8650
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 58/800... Loss: 0.2808... Val Loss: 0.6139
+train_acc is 0.9600 and val_acc is 0.8525
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 59/800... Loss: 0.2781... Val Loss: 0.4611
+train_acc is 0.9613 and val_acc is 0.8875
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 60/800... Loss: 0.2590... Val Loss: 0.5292
+train_acc is 0.9669 and val_acc is 0.8850
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 61/800... Loss: 0.2615... Val Loss: 0.5189
+train_acc is 0.9688 and val_acc is 0.8775
+EarlyStopping counter: 10 out of 300
+EarlyStopping counter: 10 out of 300
+
+
+Epoch: 62/800... Loss: 0.2492... Val Loss: 0.5084
+train_acc is 0.9681 and val_acc is 0.8925
+EarlyStopping counter: 11 out of 300
+EarlyStopping counter: 11 out of 300
+
+
+Epoch: 63/800... Loss: 0.2278... Val Loss: 0.5201
+train_acc is 0.9762 and val_acc is 0.8875
+EarlyStopping counter: 12 out of 300
+EarlyStopping counter: 12 out of 300
+
+
+Epoch: 64/800... Loss: 0.2190... Val Loss: 0.4860
+train_acc is 0.9781 and val_acc is 0.8900
+EarlyStopping counter: 13 out of 300
+EarlyStopping counter: 13 out of 300
+
+
+Epoch: 65/800... Loss: 0.2307... Val Loss: 0.5055
+train_acc is 0.9706 and val_acc is 0.8800
+EarlyStopping counter: 14 out of 300
+EarlyStopping counter: 14 out of 300
+
+
+Epoch: 66/800... Loss: 0.2398... Val Loss: 0.4823
+train_acc is 0.9719 and val_acc is 0.8900
+EarlyStopping counter: 15 out of 300
+EarlyStopping counter: 15 out of 300
+
+
+Epoch: 67/800... Loss: 0.2313... Val Loss: 0.5379
+train_acc is 0.9688 and val_acc is 0.8900
+EarlyStopping counter: 16 out of 300
+EarlyStopping counter: 16 out of 300
+
+
+Epoch: 68/800... Loss: 0.2160... Val Loss: 0.4428
+train_acc is 0.9775 and val_acc is 0.9025
+Validation loss decreased (-0.902500 --> -0.902500).  Saving model ...
+
+
+Epoch: 69/800... Loss: 0.2088... Val Loss: 0.4707
+train_acc is 0.9756 and val_acc is 0.8875
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 70/800... Loss: 0.1994... Val Loss: 0.4571
+train_acc is 0.9844 and val_acc is 0.8925
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 71/800... Loss: 0.1993... Val Loss: 0.4595
+train_acc is 0.9806 and val_acc is 0.9025
+Validation loss decreased (-0.902500 --> -0.902500).  Saving model ...
+
+
+Epoch: 72/800... Loss: 0.2001... Val Loss: 0.4439
+train_acc is 0.9775 and val_acc is 0.9075
+Validation loss decreased (-0.902500 --> -0.907500).  Saving model ...
+
+
+Epoch: 73/800... Loss: 0.1939... Val Loss: 0.4399
+train_acc is 0.9794 and val_acc is 0.9125
+Validation loss decreased (-0.907500 --> -0.912500).  Saving model ...
+
+
+Epoch: 74/800... Loss: 0.1634... Val Loss: 0.4198
+train_acc is 0.9869 and val_acc is 0.9100
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 75/800... Loss: 0.1775... Val Loss: 0.4543
+train_acc is 0.9850 and val_acc is 0.8900
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 76/800... Loss: 0.1831... Val Loss: 0.4218
+train_acc is 0.9800 and val_acc is 0.8975
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 77/800... Loss: 0.1795... Val Loss: 0.4846
+train_acc is 0.9806 and val_acc is 0.8825
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 78/800... Loss: 0.1640... Val Loss: 0.4503
+train_acc is 0.9881 and val_acc is 0.8950
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 79/800... Loss: 0.1656... Val Loss: 0.4472
+train_acc is 0.9819 and val_acc is 0.9200
+Validation loss decreased (-0.912500 --> -0.920000).  Saving model ...
+
+
+Epoch: 80/800... Loss: 0.1615... Val Loss: 0.4328
+train_acc is 0.9831 and val_acc is 0.9150
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 81/800... Loss: 0.1568... Val Loss: 0.3758
+train_acc is 0.9844 and val_acc is 0.9225
+Validation loss decreased (-0.920000 --> -0.922500).  Saving model ...
+
+
+Epoch: 82/800... Loss: 0.1434... Val Loss: 0.5114
+train_acc is 0.9900 and val_acc is 0.9025
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 83/800... Loss: 0.1434... Val Loss: 0.3974
+train_acc is 0.9912 and val_acc is 0.9075
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 84/800... Loss: 0.1543... Val Loss: 0.4370
+train_acc is 0.9869 and val_acc is 0.8850
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 85/800... Loss: 0.1497... Val Loss: 0.4249
+train_acc is 0.9850 and val_acc is 0.9075
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 86/800... Loss: 0.1416... Val Loss: 0.4362
+train_acc is 0.9888 and val_acc is 0.9025
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 87/800... Loss: 0.1456... Val Loss: 0.3797
+train_acc is 0.9869 and val_acc is 0.9175
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 88/800... Loss: 0.1302... Val Loss: 0.3754
+train_acc is 0.9906 and val_acc is 0.9275
+Validation loss decreased (-0.922500 --> -0.927500).  Saving model ...
+
+
+Epoch: 89/800... Loss: 0.1332... Val Loss: 0.3837
+train_acc is 0.9856 and val_acc is 0.9150
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 90/800... Loss: 0.1397... Val Loss: 0.3793
+train_acc is 0.9875 and val_acc is 0.9150
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 91/800... Loss: 0.1317... Val Loss: 0.3949
+train_acc is 0.9888 and val_acc is 0.9025
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 92/800... Loss: 0.1234... Val Loss: 0.4603
+train_acc is 0.9912 and val_acc is 0.8975
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 93/800... Loss: 0.1162... Val Loss: 0.3991
+train_acc is 0.9938 and val_acc is 0.9050
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 94/800... Loss: 0.1228... Val Loss: 0.4416
+train_acc is 0.9906 and val_acc is 0.8900
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 95/800... Loss: 0.1280... Val Loss: 0.4260
+train_acc is 0.9875 and val_acc is 0.8975
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 96/800... Loss: 0.1238... Val Loss: 0.3875
+train_acc is 0.9912 and val_acc is 0.8925
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 97/800... Loss: 0.1189... Val Loss: 0.4055
+train_acc is 0.9925 and val_acc is 0.8925
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 98/800... Loss: 0.1129... Val Loss: 0.4119
+train_acc is 0.9931 and val_acc is 0.9025
+EarlyStopping counter: 10 out of 300
+EarlyStopping counter: 10 out of 300
+
+
+Epoch: 99/800... Loss: 0.1273... Val Loss: 0.3651
+train_acc is 0.9900 and val_acc is 0.9150
+EarlyStopping counter: 11 out of 300
+EarlyStopping counter: 11 out of 300
+
+
+Epoch: 100/800... Loss: 0.1101... Val Loss: 0.3716
+train_acc is 0.9944 and val_acc is 0.9150
+EarlyStopping counter: 12 out of 300
+EarlyStopping counter: 12 out of 300
+
+
+Epoch: 101/800... Loss: 0.1102... Val Loss: 0.4767
+train_acc is 0.9950 and val_acc is 0.9050
+EarlyStopping counter: 13 out of 300
+EarlyStopping counter: 13 out of 300
+
+
+Epoch: 102/800... Loss: 0.1146... Val Loss: 0.3853
+train_acc is 0.9919 and val_acc is 0.9025
+EarlyStopping counter: 14 out of 300
+EarlyStopping counter: 14 out of 300
+
+
+Epoch: 103/800... Loss: 0.1076... Val Loss: 0.3657
+train_acc is 0.9925 and val_acc is 0.9250
+EarlyStopping counter: 15 out of 300
+EarlyStopping counter: 15 out of 300
+
+
+Epoch: 104/800... Loss: 0.1083... Val Loss: 0.3899
+train_acc is 0.9931 and val_acc is 0.9250
+EarlyStopping counter: 16 out of 300
+EarlyStopping counter: 16 out of 300
+
+
+Epoch: 105/800... Loss: 0.1073... Val Loss: 0.3701
+train_acc is 0.9912 and val_acc is 0.9300
+Validation loss decreased (-0.927500 --> -0.930000).  Saving model ...
+
+
+Epoch: 106/800... Loss: 0.1037... Val Loss: 0.3892
+train_acc is 0.9931 and val_acc is 0.9200
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 107/800... Loss: 0.1068... Val Loss: 0.3790
+train_acc is 0.9919 and val_acc is 0.9075
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 108/800... Loss: 0.1000... Val Loss: 0.3698
+train_acc is 0.9931 and val_acc is 0.9150
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 109/800... Loss: 0.1003... Val Loss: 0.3817
+train_acc is 0.9938 and val_acc is 0.9025
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 110/800... Loss: 0.0914... Val Loss: 0.3786
+train_acc is 0.9956 and val_acc is 0.9125
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 111/800... Loss: 0.0990... Val Loss: 0.4009
+train_acc is 0.9919 and val_acc is 0.9000
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 112/800... Loss: 0.0940... Val Loss: 0.3863
+train_acc is 0.9944 and val_acc is 0.9075
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 113/800... Loss: 0.0953... Val Loss: 0.4307
+train_acc is 0.9931 and val_acc is 0.9075
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 114/800... Loss: 0.0884... Val Loss: 0.3716
+train_acc is 0.9944 and val_acc is 0.9200
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 115/800... Loss: 0.0882... Val Loss: 0.3473
+train_acc is 0.9962 and val_acc is 0.9225
+EarlyStopping counter: 10 out of 300
+EarlyStopping counter: 10 out of 300
+
+
+Epoch: 116/800... Loss: 0.0858... Val Loss: 0.3757
+train_acc is 0.9962 and val_acc is 0.9150
+EarlyStopping counter: 11 out of 300
+EarlyStopping counter: 11 out of 300
+
+
+Epoch: 117/800... Loss: 0.0856... Val Loss: 0.3642
+train_acc is 0.9956 and val_acc is 0.9200
+EarlyStopping counter: 12 out of 300
+EarlyStopping counter: 12 out of 300
+
+
+Epoch: 118/800... Loss: 0.0825... Val Loss: 0.3478
+train_acc is 0.9962 and val_acc is 0.9225
+EarlyStopping counter: 13 out of 300
+EarlyStopping counter: 13 out of 300
+
+
+Epoch: 119/800... Loss: 0.0872... Val Loss: 0.3489
+train_acc is 0.9931 and val_acc is 0.9225
+EarlyStopping counter: 14 out of 300
+EarlyStopping counter: 14 out of 300
+
+
+Epoch: 120/800... Loss: 0.0850... Val Loss: 0.3286
+train_acc is 0.9962 and val_acc is 0.9300
+Validation loss decreased (-0.930000 --> -0.930000).  Saving model ...
+
+
+Epoch: 121/800... Loss: 0.0866... Val Loss: 0.3491
+train_acc is 0.9956 and val_acc is 0.9300
+Validation loss decreased (-0.930000 --> -0.930000).  Saving model ...
+
+
+Epoch: 122/800... Loss: 0.0880... Val Loss: 0.3547
+train_acc is 0.9938 and val_acc is 0.9275
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 123/800... Loss: 0.0815... Val Loss: 0.3029
+train_acc is 0.9969 and val_acc is 0.9350
+Validation loss decreased (-0.930000 --> -0.935000).  Saving model ...
+
+
+Epoch: 124/800... Loss: 0.0767... Val Loss: 0.3631
+train_acc is 0.9969 and val_acc is 0.9300
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 125/800... Loss: 0.0856... Val Loss: 0.3352
+train_acc is 0.9950 and val_acc is 0.9225
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 126/800... Loss: 0.0920... Val Loss: 0.3657
+train_acc is 0.9931 and val_acc is 0.9225
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 127/800... Loss: 0.0862... Val Loss: 0.4131
+train_acc is 0.9956 and val_acc is 0.9150
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 128/800... Loss: 0.0777... Val Loss: 0.3936
+train_acc is 0.9975 and val_acc is 0.9125
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 129/800... Loss: 0.0787... Val Loss: 0.3910
+train_acc is 0.9950 and val_acc is 0.9125
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 130/800... Loss: 0.0710... Val Loss: 0.3861
+train_acc is 0.9988 and val_acc is 0.9200
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 131/800... Loss: 0.0748... Val Loss: 0.3152
+train_acc is 0.9962 and val_acc is 0.9325
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 132/800... Loss: 0.0823... Val Loss: 0.3745
+train_acc is 0.9956 and val_acc is 0.9275
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 133/800... Loss: 0.0761... Val Loss: 0.3569
+train_acc is 0.9969 and val_acc is 0.9275
+EarlyStopping counter: 10 out of 300
+EarlyStopping counter: 10 out of 300
+
+
+Epoch: 134/800... Loss: 0.0785... Val Loss: 0.3484
+train_acc is 0.9944 and val_acc is 0.9150
+EarlyStopping counter: 11 out of 300
+EarlyStopping counter: 11 out of 300
+
+
+Epoch: 135/800... Loss: 0.0740... Val Loss: 0.3424
+train_acc is 0.9975 and val_acc is 0.9150
+EarlyStopping counter: 12 out of 300
+EarlyStopping counter: 12 out of 300
+
+
+Epoch: 136/800... Loss: 0.0727... Val Loss: 0.4325
+train_acc is 0.9981 and val_acc is 0.9175
+EarlyStopping counter: 13 out of 300
+EarlyStopping counter: 13 out of 300
+
+
+Epoch: 137/800... Loss: 0.0721... Val Loss: 0.3600
+train_acc is 0.9975 and val_acc is 0.9100
+EarlyStopping counter: 14 out of 300
+EarlyStopping counter: 14 out of 300
+
+
+Epoch: 138/800... Loss: 0.0745... Val Loss: 0.3330
+train_acc is 0.9956 and val_acc is 0.9150
+EarlyStopping counter: 15 out of 300
+EarlyStopping counter: 15 out of 300
+
+
+Epoch: 139/800... Loss: 0.0757... Val Loss: 0.4727
+train_acc is 0.9950 and val_acc is 0.9175
+EarlyStopping counter: 16 out of 300
+EarlyStopping counter: 16 out of 300
+
+
+Epoch: 140/800... Loss: 0.0702... Val Loss: 0.3514
+train_acc is 0.9969 and val_acc is 0.9150
+EarlyStopping counter: 17 out of 300
+EarlyStopping counter: 17 out of 300
+
+
+Epoch: 141/800... Loss: 0.0700... Val Loss: 0.3713
+train_acc is 0.9988 and val_acc is 0.9200
+EarlyStopping counter: 18 out of 300
+EarlyStopping counter: 18 out of 300
+
+
+Epoch: 142/800... Loss: 0.0706... Val Loss: 0.3424
+train_acc is 0.9962 and val_acc is 0.9150
+EarlyStopping counter: 19 out of 300
+EarlyStopping counter: 19 out of 300
+
+
+Epoch: 143/800... Loss: 0.0748... Val Loss: 0.4025
+train_acc is 0.9938 and val_acc is 0.9150
+EarlyStopping counter: 20 out of 300
+EarlyStopping counter: 20 out of 300
+
+
+Epoch: 144/800... Loss: 0.0714... Val Loss: 0.3412
+train_acc is 0.9969 and val_acc is 0.9250
+EarlyStopping counter: 21 out of 300
+EarlyStopping counter: 21 out of 300
+
+
+Epoch: 145/800... Loss: 0.0695... Val Loss: 0.3188
+train_acc is 0.9962 and val_acc is 0.9250
+EarlyStopping counter: 22 out of 300
+EarlyStopping counter: 22 out of 300
+
+
+Epoch: 146/800... Loss: 0.0677... Val Loss: 0.3471
+train_acc is 0.9981 and val_acc is 0.9250
+EarlyStopping counter: 23 out of 300
+EarlyStopping counter: 23 out of 300
+
+
+Epoch: 147/800... Loss: 0.0666... Val Loss: 0.4269
+train_acc is 0.9969 and val_acc is 0.9125
+EarlyStopping counter: 24 out of 300
+EarlyStopping counter: 24 out of 300
+
+
+Epoch: 148/800... Loss: 0.0716... Val Loss: 0.4078
+train_acc is 0.9969 and val_acc is 0.9125
+EarlyStopping counter: 25 out of 300
+EarlyStopping counter: 25 out of 300
+
+
+Epoch: 149/800... Loss: 0.0747... Val Loss: 0.3557
+train_acc is 0.9938 and val_acc is 0.9225
+EarlyStopping counter: 26 out of 300
+EarlyStopping counter: 26 out of 300
+
+
+Epoch: 150/800... Loss: 0.0661... Val Loss: 0.3469
+train_acc is 0.9981 and val_acc is 0.9225
+EarlyStopping counter: 27 out of 300
+EarlyStopping counter: 27 out of 300
+
+
+Epoch: 151/800... Loss: 0.0751... Val Loss: 0.3734
+train_acc is 0.9938 and val_acc is 0.9250
+EarlyStopping counter: 28 out of 300
+EarlyStopping counter: 28 out of 300
+
+
+Epoch: 152/800... Loss: 0.0616... Val Loss: 0.3274
+train_acc is 1.0000 and val_acc is 0.9225
+EarlyStopping counter: 29 out of 300
+EarlyStopping counter: 29 out of 300
+
+
+Epoch: 153/800... Loss: 0.0681... Val Loss: 0.3379
+train_acc is 0.9975 and val_acc is 0.9200
+EarlyStopping counter: 30 out of 300
+EarlyStopping counter: 30 out of 300
+
+
+Epoch: 154/800... Loss: 0.0650... Val Loss: 0.3743
+train_acc is 0.9975 and val_acc is 0.9225
+EarlyStopping counter: 31 out of 300
+EarlyStopping counter: 31 out of 300
+
+
+Epoch: 155/800... Loss: 0.0673... Val Loss: 0.3479
+train_acc is 0.9962 and val_acc is 0.9200
+EarlyStopping counter: 32 out of 300
+EarlyStopping counter: 32 out of 300
+
+
+Epoch: 156/800... Loss: 0.0670... Val Loss: 0.4295
+train_acc is 0.9956 and val_acc is 0.9150
+EarlyStopping counter: 33 out of 300
+EarlyStopping counter: 33 out of 300
+
+
+Epoch: 157/800... Loss: 0.0672... Val Loss: 0.3692
+train_acc is 0.9969 and val_acc is 0.9150
+EarlyStopping counter: 34 out of 300
+EarlyStopping counter: 34 out of 300
+
+
+Epoch: 158/800... Loss: 0.0615... Val Loss: 0.3390
+train_acc is 0.9988 and val_acc is 0.9325
+EarlyStopping counter: 35 out of 300
+EarlyStopping counter: 35 out of 300
+
+
+Epoch: 159/800... Loss: 0.0636... Val Loss: 0.3556
+train_acc is 0.9969 and val_acc is 0.9250
+EarlyStopping counter: 36 out of 300
+EarlyStopping counter: 36 out of 300
+
+
+Epoch: 160/800... Loss: 0.0668... Val Loss: 0.4040
+train_acc is 0.9962 and val_acc is 0.9225
+EarlyStopping counter: 37 out of 300
+EarlyStopping counter: 37 out of 300
+
+
+Epoch: 161/800... Loss: 0.0626... Val Loss: 0.3524
+train_acc is 0.9975 and val_acc is 0.9250
+EarlyStopping counter: 38 out of 300
+EarlyStopping counter: 38 out of 300
+
+
+Epoch: 162/800... Loss: 0.0587... Val Loss: 0.3911
+train_acc is 0.9994 and val_acc is 0.9225
+EarlyStopping counter: 39 out of 300
+EarlyStopping counter: 39 out of 300
+
+
+Epoch: 163/800... Loss: 0.0646... Val Loss: 0.3850
+train_acc is 0.9962 and val_acc is 0.9325
+EarlyStopping counter: 40 out of 300
+EarlyStopping counter: 40 out of 300
+
+
+Epoch: 164/800... Loss: 0.0682... Val Loss: 0.3106
+train_acc is 0.9981 and val_acc is 0.9325
+EarlyStopping counter: 41 out of 300
+EarlyStopping counter: 41 out of 300
+
+
+Epoch: 165/800... Loss: 0.0632... Val Loss: 0.3731
+train_acc is 0.9975 and val_acc is 0.9300
+EarlyStopping counter: 42 out of 300
+EarlyStopping counter: 42 out of 300
+
+
+Epoch: 166/800... Loss: 0.0610... Val Loss: 0.3276
+train_acc is 0.9975 and val_acc is 0.9250
+EarlyStopping counter: 43 out of 300
+EarlyStopping counter: 43 out of 300
+
+
+Epoch: 167/800... Loss: 0.0582... Val Loss: 0.4122
+train_acc is 0.9969 and val_acc is 0.9250
+EarlyStopping counter: 44 out of 300
+EarlyStopping counter: 44 out of 300
+
+
+Epoch: 168/800... Loss: 0.0614... Val Loss: 0.3444
+train_acc is 0.9969 and val_acc is 0.9175
+EarlyStopping counter: 45 out of 300
+EarlyStopping counter: 45 out of 300
+
+
+Epoch: 169/800... Loss: 0.0633... Val Loss: 0.3627
+train_acc is 0.9969 and val_acc is 0.9300
+EarlyStopping counter: 46 out of 300
+EarlyStopping counter: 46 out of 300
+
+
+Epoch: 170/800... Loss: 0.0662... Val Loss: 0.3567
+train_acc is 0.9969 and val_acc is 0.9225
+EarlyStopping counter: 47 out of 300
+EarlyStopping counter: 47 out of 300
+
+
+Epoch: 171/800... Loss: 0.0664... Val Loss: 0.3950
+train_acc is 0.9962 and val_acc is 0.9300
+EarlyStopping counter: 48 out of 300
+EarlyStopping counter: 48 out of 300
+
+
+Epoch: 172/800... Loss: 0.0614... Val Loss: 0.3173
+train_acc is 0.9969 and val_acc is 0.9300
+EarlyStopping counter: 49 out of 300
+EarlyStopping counter: 49 out of 300
+
+
+Epoch: 173/800... Loss: 0.0618... Val Loss: 0.4058
+train_acc is 0.9975 and val_acc is 0.9275
+EarlyStopping counter: 50 out of 300
+EarlyStopping counter: 50 out of 300
+
+
+Epoch: 174/800... Loss: 0.0642... Val Loss: 0.3960
+train_acc is 0.9950 and val_acc is 0.9250
+EarlyStopping counter: 51 out of 300
+EarlyStopping counter: 51 out of 300
+
+
+Epoch: 175/800... Loss: 0.0616... Val Loss: 0.3775
+train_acc is 0.9962 and val_acc is 0.9125
+EarlyStopping counter: 52 out of 300
+EarlyStopping counter: 52 out of 300
+
+
+Epoch: 176/800... Loss: 0.0551... Val Loss: 0.3804
+train_acc is 0.9988 and val_acc is 0.9200
+EarlyStopping counter: 53 out of 300
+EarlyStopping counter: 53 out of 300
+
+
+Epoch: 177/800... Loss: 0.0536... Val Loss: 0.3688
+train_acc is 0.9994 and val_acc is 0.9125
+EarlyStopping counter: 54 out of 300
+EarlyStopping counter: 54 out of 300
+
+
+Epoch: 178/800... Loss: 0.0594... Val Loss: 0.3655
+train_acc is 0.9975 and val_acc is 0.9200
+EarlyStopping counter: 55 out of 300
+EarlyStopping counter: 55 out of 300
+
+
+Epoch: 179/800... Loss: 0.0536... Val Loss: 0.3889
+train_acc is 0.9994 and val_acc is 0.9200
+EarlyStopping counter: 56 out of 300
+EarlyStopping counter: 56 out of 300
+
+
+Epoch: 180/800... Loss: 0.0615... Val Loss: 0.3297
+train_acc is 0.9975 and val_acc is 0.9225
+EarlyStopping counter: 57 out of 300
+EarlyStopping counter: 57 out of 300
+
+
+Epoch: 181/800... Loss: 0.0587... Val Loss: 0.3476
+train_acc is 0.9981 and val_acc is 0.9275
+EarlyStopping counter: 58 out of 300
+EarlyStopping counter: 58 out of 300
+
+
+Epoch: 182/800... Loss: 0.0563... Val Loss: 0.3259
+train_acc is 0.9981 and val_acc is 0.9275
+EarlyStopping counter: 59 out of 300
+EarlyStopping counter: 59 out of 300
+
+
+Epoch: 183/800... Loss: 0.0609... Val Loss: 0.3114
+train_acc is 0.9969 and val_acc is 0.9275
+EarlyStopping counter: 60 out of 300
+EarlyStopping counter: 60 out of 300
+
+
+Epoch: 184/800... Loss: 0.0586... Val Loss: 0.3839
+train_acc is 0.9981 and val_acc is 0.9250
+EarlyStopping counter: 61 out of 300
+EarlyStopping counter: 61 out of 300
+
+
+Epoch: 185/800... Loss: 0.0619... Val Loss: 0.3410
+train_acc is 0.9975 and val_acc is 0.9300
+EarlyStopping counter: 62 out of 300
+EarlyStopping counter: 62 out of 300
+
+
+Epoch: 186/800... Loss: 0.0522... Val Loss: 0.3540
+train_acc is 0.9988 and val_acc is 0.9325
+EarlyStopping counter: 63 out of 300
+EarlyStopping counter: 63 out of 300
+
+
+Epoch: 187/800... Loss: 0.0622... Val Loss: 0.3417
+train_acc is 0.9969 and val_acc is 0.9250
+EarlyStopping counter: 64 out of 300
+EarlyStopping counter: 64 out of 300
+
+
+Epoch: 188/800... Loss: 0.0547... Val Loss: 0.3108
+train_acc is 0.9988 and val_acc is 0.9300
+EarlyStopping counter: 65 out of 300
+EarlyStopping counter: 65 out of 300
+
+
+Epoch: 189/800... Loss: 0.0557... Val Loss: 0.3641
+train_acc is 0.9988 and val_acc is 0.9300
+EarlyStopping counter: 66 out of 300
+EarlyStopping counter: 66 out of 300
+
+
+Epoch: 190/800... Loss: 0.0581... Val Loss: 0.3433
+train_acc is 0.9975 and val_acc is 0.9300
+EarlyStopping counter: 67 out of 300
+EarlyStopping counter: 67 out of 300
+
+
+Epoch: 191/800... Loss: 0.0547... Val Loss: 0.3062
+train_acc is 0.9988 and val_acc is 0.9325
+EarlyStopping counter: 68 out of 300
+EarlyStopping counter: 68 out of 300
+
+
+Epoch: 192/800... Loss: 0.0531... Val Loss: 0.3426
+train_acc is 0.9981 and val_acc is 0.9325
+EarlyStopping counter: 69 out of 300
+EarlyStopping counter: 69 out of 300
+
+
+Epoch: 193/800... Loss: 0.0569... Val Loss: 0.3530
+train_acc is 0.9969 and val_acc is 0.9350
+Validation loss decreased (-0.935000 --> -0.935000).  Saving model ...
+
+
+Epoch: 194/800... Loss: 0.0559... Val Loss: 0.3644
+train_acc is 0.9969 and val_acc is 0.9225
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 195/800... Loss: 0.0544... Val Loss: 0.3785
+train_acc is 0.9981 and val_acc is 0.9400
+Validation loss decreased (-0.935000 --> -0.940000).  Saving model ...
+
+
+Epoch: 196/800... Loss: 0.0597... Val Loss: 0.3428
+train_acc is 0.9956 and val_acc is 0.9325
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 197/800... Loss: 0.0605... Val Loss: 0.2954
+train_acc is 0.9969 and val_acc is 0.9300
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 198/800... Loss: 0.0526... Val Loss: 0.3672
+train_acc is 0.9994 and val_acc is 0.9275
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 199/800... Loss: 0.0532... Val Loss: 0.2977
+train_acc is 0.9975 and val_acc is 0.9300
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 200/800... Loss: 0.0504... Val Loss: 0.3500
+train_acc is 0.9994 and val_acc is 0.9250
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 201/800... Loss: 0.0515... Val Loss: 0.4246
+train_acc is 0.9975 and val_acc is 0.9250
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 202/800... Loss: 0.0559... Val Loss: 0.3473
+train_acc is 0.9975 and val_acc is 0.9300
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 203/800... Loss: 0.0531... Val Loss: 0.3062
+train_acc is 0.9981 and val_acc is 0.9325
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
+
+
+Epoch: 204/800... Loss: 0.0518... Val Loss: 0.3899
+train_acc is 0.9988 and val_acc is 0.9275
+EarlyStopping counter: 9 out of 300
+EarlyStopping counter: 9 out of 300
+
+
+Epoch: 205/800... Loss: 0.0578... Val Loss: 0.3491
+train_acc is 0.9969 and val_acc is 0.9325
+EarlyStopping counter: 10 out of 300
+EarlyStopping counter: 10 out of 300
+
+
+Epoch: 206/800... Loss: 0.0504... Val Loss: 0.3417
+train_acc is 0.9994 and val_acc is 0.9325
+EarlyStopping counter: 11 out of 300
+EarlyStopping counter: 11 out of 300
+
+
+Epoch: 207/800... Loss: 0.0557... Val Loss: 0.3141
+train_acc is 0.9981 and val_acc is 0.9275
+EarlyStopping counter: 12 out of 300
+EarlyStopping counter: 12 out of 300
+
+
+Epoch: 208/800... Loss: 0.0528... Val Loss: 0.3609
+train_acc is 0.9975 and val_acc is 0.9325
+EarlyStopping counter: 13 out of 300
+EarlyStopping counter: 13 out of 300
+
+
+Epoch: 209/800... Loss: 0.0495... Val Loss: 0.3235
+train_acc is 0.9994 and val_acc is 0.9400
+Validation loss decreased (-0.940000 --> -0.940000).  Saving model ...
+
+
+Epoch: 210/800... Loss: 0.0565... Val Loss: 0.3582
+train_acc is 0.9981 and val_acc is 0.9375
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 211/800... Loss: 0.0509... Val Loss: 0.3709
+train_acc is 0.9981 and val_acc is 0.9350
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 212/800... Loss: 0.0537... Val Loss: 0.2946
+train_acc is 0.9975 and val_acc is 0.9400
+Validation loss decreased (-0.940000 --> -0.940000).  Saving model ...
+
+
+Epoch: 213/800... Loss: 0.0594... Val Loss: 0.3207
+train_acc is 0.9956 and val_acc is 0.9325
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 214/800... Loss: 0.0561... Val Loss: 0.3155
+train_acc is 0.9969 and val_acc is 0.9350
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 215/800... Loss: 0.0531... Val Loss: 0.3442
+train_acc is 0.9981 and val_acc is 0.9325
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 216/800... Loss: 0.0524... Val Loss: 0.3659
+train_acc is 0.9988 and val_acc is 0.9300
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 217/800... Loss: 0.0526... Val Loss: 0.3617
+train_acc is 0.9988 and val_acc is 0.9425
+Validation loss decreased (-0.940000 --> -0.942500).  Saving model ...
+
+
+Epoch: 218/800... Loss: 0.0532... Val Loss: 0.3714
+train_acc is 0.9975 and val_acc is 0.9375
+EarlyStopping counter: 1 out of 300
+EarlyStopping counter: 1 out of 300
+
+
+Epoch: 219/800... Loss: 0.0523... Val Loss: 0.3910
+train_acc is 0.9981 and val_acc is 0.9275
+EarlyStopping counter: 2 out of 300
+EarlyStopping counter: 2 out of 300
+
+
+Epoch: 220/800... Loss: 0.0530... Val Loss: 0.3014
+train_acc is 0.9969 and val_acc is 0.9325
+EarlyStopping counter: 3 out of 300
+EarlyStopping counter: 3 out of 300
+
+
+Epoch: 221/800... Loss: 0.0506... Val Loss: 0.4252
+train_acc is 0.9994 and val_acc is 0.9325
+EarlyStopping counter: 4 out of 300
+EarlyStopping counter: 4 out of 300
+
+
+Epoch: 222/800... Loss: 0.0534... Val Loss: 0.2943
+train_acc is 0.9981 and val_acc is 0.9350
+EarlyStopping counter: 5 out of 300
+EarlyStopping counter: 5 out of 300
+
+
+Epoch: 223/800... Loss: 0.0478... Val Loss: 0.2887
+train_acc is 0.9988 and val_acc is 0.9375
+EarlyStopping counter: 6 out of 300
+EarlyStopping counter: 6 out of 300
+
+
+Epoch: 224/800... Loss: 0.0478... Val Loss: 0.3079
+train_acc is 1.0000 and val_acc is 0.9350
+EarlyStopping counter: 7 out of 300
+EarlyStopping counter: 7 out of 300
+
+
+Epoch: 225/800... Loss: 0.0503... Val Loss: 0.3010
+train_acc is 0.9981 and val_acc is 0.9325
+EarlyStopping counter: 8 out of 300
+EarlyStopping counter: 8 out of 300
