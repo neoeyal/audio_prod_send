@@ -1,4 +1,4 @@
-## Running a Small Training (with Limited Data)
+## Running a Small Training + evaluation (with Limited Data).
 
 # 1. Clone the repository
 git clone https://github.com/neoeyal/audio_prod_send
