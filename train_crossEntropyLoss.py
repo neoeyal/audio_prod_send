@@ -20,8 +20,8 @@ elif config.US8K:
 
 
 use_cuda = torch.cuda.is_available()
-device = torch.device("cuda:0" if use_cuda else "cpu")
-print(f"device: {device}")
+#device = torch.device("cuda:0" if use_cuda else "cpu")
+device = "cpu"
 
 model =torchvision.models.resnet50(pretrained=True).to(device)
 model.fc = nn.Sequential(nn.Identity())
